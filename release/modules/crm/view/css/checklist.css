@@ -1,0 +1,182 @@
+.admin-style .checklist-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-style .checklist-wrapper .checklist-progress {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-style .checklist-wrapper .progress-label {
+    font-weight: bold;
+    min-width: 40px;
+}
+
+.admin-style .checklist-wrapper .progress-bar-background {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.admin-style .checklist-wrapper .progress-bar-fill {
+    height: 100%;
+    background: #6ad183;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.admin-style .checklist-wrapper .checklist-group {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10px;
+}
+
+.admin-style .checklist-wrapper .checklist-group:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.admin-style .checklist-wrapper .checklist-group.single {
+    border: none;
+    padding-left: 0;
+}
+
+.admin-style .checklist-wrapper .checklist-group[data-editing="true"] .checklist-header .remove-btn,
+.admin-style .checklist-wrapper .checklist-item[data-editing="true"] .remove-btn {
+    display: inline-block;
+}
+
+.admin-style .checklist-wrapper .checklist-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    gap:8px;
+}
+
+.admin-style .checklist-wrapper .checklist-header .edit-icon {
+    display: none;
+    margin-left: 6px;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+.admin-style .checklist-wrapper .checklist-header:hover .edit-icon {
+    display: inline;
+}
+
+.admin-style .checklist-wrapper .group-title {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.admin-style .checklist-group .add-item-btn {
+    margin-top: 8px;
+}
+
+.admin-style .checklist-wrapper .checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-style .checklist-wrapper .checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.admin-style .checklist-wrapper .checklist-item[data-has-product="true"]:hover .item-label .remove-btn {
+    display: inline;
+}
+
+.admin-style .checklist-wrapper .checklist-item input[type="checkbox"] {
+    margin: 0;
+}
+
+.admin-style .checklist-wrapper .checklist-item input[type="text"] {
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.admin-style .checklist-wrapper .checklist-item input[type="text"]:focus {
+    outline: none;
+    background: #f8f8f8;
+}
+
+.admin-style .checklist-wrapper .item-label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.admin-style .checklist-wrapper .item-label .edit-icon {
+    display: none;
+    margin-left: 6px;
+    font-size: 16px;
+    color: #888;
+}
+
+.admin-style .checklist-wrapper .checklist-item:hover .item-label .edit-icon {
+    display: inline;
+}
+
+.admin-style .checklist-wrapper .checklist-item .item-label .remove-btn {
+    height: 20px;
+}
+
+.admin-style .checklist-wrapper .checklist-item .select-product-btn {
+    display: none;
+}
+
+.admin-style .checklist-wrapper .checklist-item[data-editing="true"] .select-product-btn {
+    display: inline-block;
+}
+
+
+.admin-style .checklist-wrapper .remove-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #F44336;
+    cursor: pointer;
+}
+
+.admin-style .checklist-wrapper .sort-handle {
+    cursor: grab;
+    color: #888;
+    font-size: 18px;
+}
+
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .edit-icon,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .remove-btn,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .select-product-btn,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .sort-handle,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .checklist-header:hover .edit-icon,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .checklist-item:hover .item-label .edit-icon,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .checklist-item[data-has-product="true"]:hover .item-label .remove-btn {
+    display: none !important;
+}
+
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .checklist-item input[type="text"] {
+    pointer-events: none;
+    background: transparent;
+    color: inherit;
+    cursor: default;
+}
+
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .group-title,
+.admin-style .checklist-wrapper[data-checklist-can-edit="false"] .item-label {
+    cursor: default;
+}

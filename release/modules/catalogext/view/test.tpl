@@ -1,0 +1,1 @@
+{t name="catalogext"}Страница тестового модуля %name{/t}

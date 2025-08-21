@@ -1,0 +1,115 @@
+.task-col-number {
+    grid-area: number;
+    font-weight: bold;
+    text-align:left;
+}
+.task-col-number-value {
+    grid-area: number-value;
+    text-align:left;
+}
+.task-col-status {
+    grid-area: status;
+    font-weight: bold;
+}
+.task-col-status-value {
+    grid-area: status-value;
+}
+.task-col-object {
+    grid-area: object;
+    font-weight: bold;
+}
+.task-col-object-value {
+    grid-area: object-value;
+}
+.task-col-entity {
+    grid-area: entity;
+    border-top:1px solid #eee;
+    margin-top:8px;
+    padding-top:8px;
+    font-size:12px;
+    text-align:left;
+}
+.task-col-entity-value {
+    grid-area: entity-value;
+    text-align:left;
+}
+
+.task-col-errors {
+    grid-area: errors;
+    border-top:1px solid #eee;
+    margin-top:8px;
+    padding-top:8px;
+    font-size:12px;
+    text-align:left;
+}
+
+.task-col-errors-value {
+    grid-area: errors-value;
+    text-align:left;
+    color:red;
+}
+
+.status-field {
+    background: #eee;
+    padding:5px 8px;
+    border-radius:5px;
+}
+
+.admin-style .task-result-box {
+    display:grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "number status object"
+        "number-value status-value object-value"
+        "entity entity entity"
+        "entity-value entity-value entity-value"
+        "errors errors errors"
+        "errors-value errors-value errors-value";
+
+    border:1px solid #eee;
+    padding:12px;
+    text-align: center;
+    gap:4px;
+    margin-bottom:32px;
+}
+
+.task-result-before {
+    margin-bottom:12px;
+}
+
+.task-result-before-value {
+    margin-top:8px;
+    border:1px solid #eee;
+    padding:16px;
+    overflow: auto;
+    max-height:500px;
+}
+
+.admin-style .task-collapse-chevron {
+    font-size:18px;
+    transform:rotate(180deg);
+}
+
+.admin-style .collapsed .task-collapse-chevron {
+    transform:rotate(0);
+}
+
+.admin-style .task-result-before-toggle {
+    display:flex;
+    align-items: center;
+    gap:8px;
+    border:0;
+    padding:0;
+}
+
+.admin-style .task-result-new {
+    text-align:center;
+    padding:32px 16px;
+    border:1px solid #eee;
+}
+
+.admin-style .task-result-new .icon {
+    font-size: 72px;
+    margin-bottom: 16px;
+    color: #fe7900;
+}

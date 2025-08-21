@@ -1,0 +1,2008 @@
+.admin-style .wtable .w-date {
+    text-align:right;
+    color:#999;
+    font-size:11px;
+}
+
+.admin-style .wtable .w-point {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.admin-style .wtable .w-list {
+    padding-left:15px;
+    margin:5px 0;
+}
+
+#widget-zone {
+    position:relative;
+    zoom:1;
+    font-size:0;
+    
+    display:flex;
+    justify-content: space-between;
+}
+
+.admin-style .widget-column {
+    display:none;
+    width:100%;
+}
+
+.admin-style .widget-ph {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.admin-style .widget-filters {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#noWidgetText {
+    display:none;
+    color:#D0D0D0;
+    font-size:24px;
+    position:relative;
+    z-index:2;
+}
+
+#noWidgetText.visible {
+    display:block;
+}
+
+.admin-style .widget {
+    font-size:12px;    
+    background: #fff;
+    margin-bottom:10px;
+    border:1px solid #d3d3d3;
+    
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+}
+
+.admin-style .widget:hover {
+    border-color:#fed42b;
+}
+
+.admin-style .widget .widget-head {
+    display:flex;
+    justify-content: space-between;
+}
+
+.admin-style .widget .widget-tools {
+    padding:23px 18px 23px 5px;
+    font-size:24px;
+    white-space:nowrap;
+}
+
+.admin-style .widget .widget-tools .widget-close:hover {
+    color:#d30000;
+}
+
+.admin-style .widget .widget-tools a {
+    color:#ccc;
+    margin-left:10px;
+}
+
+.admin-style .widget .widget-tools a:hover {
+    color:black;
+}
+
+#widget-zone .sortable-placeholder {
+    width:100% !important;
+    background:#fed42b url(/resource/img/adminstyle/flatadmin/widget.svg) no-repeat center center;
+    position: relative;
+    display:inline-block;
+    margin-bottom:10px;
+    min-height:150px;
+}
+
+#widget-zone .sortable-placeholder:before {
+    content:'';
+    position:absolute;
+    border:2px dashed #000;
+    top:4px;
+    left:4px;
+    right:4px;
+    bottom:4px;
+}
+
+.admin-style .ui-sortable-placeholder {
+    border: 1px dashed #D0D0D0;
+    background: none;
+}
+
+.admin-style .widget .widget-title {
+    padding-left:5px;
+    font-size:20px;
+    color:black;
+    padding:23px 18px;
+}
+
+.admin-style .widget .widget-content {
+    min-height:100px;
+}
+
+/* Таблица */
+
+.admin-style .wtable {
+    border-collapse:collapse;
+    width:100%;
+}
+
+.admin-style .wtable.overable tr:hover td {
+    background:#fed42b;
+}
+
+.admin-style .wtable.overable-type2 tr td:first-child {
+    border-left:2px solid transparent;
+}
+
+.admin-style .wtable.overable-type2 tr td:last-child {
+    border-right:2px solid transparent;
+}
+
+.admin-style .wtable.overable-type2 tr:hover td:first-child,
+.admin-style .wtable.overable-type2 tr:hover td:last-child {
+    border-color:#fed42b;
+}
+
+.admin-style .wtable thead th{
+    padding:10px 4px;
+    font-weight:normal;
+    text-align: left;
+    font-size:12px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.admin-style .wtable .highlight td:first-child {
+    border-left:3px solid red;
+}
+
+.admin-style .wtable td {
+    padding:7px 4px;
+}
+
+.admin-style .wtable.mrg th:first-child,
+.admin-style .wtable.mrg td:first-child {
+    padding-left:20px;
+}
+
+.admin-style .wtable.mrg th:last-child,
+.admin-style .wtable.mrg td:last-child {
+    padding-right:20px;
+}
+
+.admin-style .wtable tr.clickable {
+    cursor:pointer;
+}
+
+/* Кнопки */
+
+.admin-style .widget-collection-block.empty .widget-collection-zone,
+.admin-style .widget-collection-block .rs-side-panel__empty {
+    display:none;
+}
+
+.admin-style .widget-collection-block.empty .rs-side-panel__empty {
+    display:block;
+}
+
+.admin-style .widget-collection .item {
+    border:1px solid #d3d3d3;
+    padding:24px 20px;
+    margin-bottom:6px;
+    cursor:pointer;
+}
+
+.admin-style .widget-collection .item:hover {
+    background-color:#fed42b;
+    border-color:#fed42b;
+}
+
+.admin-style .widget-collection .item .move-handle {
+    font-size:24px;
+    float:right;
+    cursor:move;
+    color:black;
+}
+
+.admin-style .widget-collection .item .add {
+    float:right;
+    font-size:24px;
+    color:black;
+    display:none;
+}
+
+.admin-style .widget-collection .item .item-description {
+    margin-bottom:5px;
+}
+
+.admin-style .widget-collection .item .item-module {
+    color:#999;
+}
+
+.admin-style .widget-collection .item .item-head .title {
+    color: black;
+    font-size: 20px;
+    padding-bottom:18px;
+}
+
+.admin-style .widget-collection .item .item-head {
+    position:relative;
+}
+
+.welcome-disk {
+    text-align: center;
+}
+
+.welcome-disk img {
+    max-width:100%;
+}
+
+#noWidgetText .text {
+    font-family: Arial Narrow,Arial;
+    font-stretch: ultra-condensed; 
+    font-size:80px;    
+    line-height:55px;
+    margin:50px 0 30px;
+    text-align: center;
+}
+
+#noWidgetText .text .small {
+    font-size:48px;
+}
+
+.admin-style .widget .empty-widget {
+    color: #808080;
+    text-align:center;
+    padding:30px 0;
+}
+
+.admin-style .widget-tabs {
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    border-bottom:2px solid #bee1ed;
+}
+
+.admin-style .widget-tabs li {
+    float:left;
+}
+
+.admin-style .widget-tabs li a {
+    padding:0 10px;
+    line-height:25px;
+    height:25px;
+    border:2px solid white;
+    border-bottom:none;
+    display:block;
+}
+
+.admin-style .widget-tabs li.act a{
+    border-color:#bee1ed;
+    border-bottom:none;    
+    font-weight:bold;
+}
+
+.admin-style .edit-mode .btn-alt.widget-change-position {
+    border-color:#2196f3;
+    background-color:#2196f3 !important;
+    color:white;
+}
+
+.admin-style .edit-mode .widget-change-position .change,
+.admin-style .widget-change-position .save {
+    display:none;
+}
+
+.admin-style .edit-mode .widget-change-position .save {
+    display:inline;
+}
+
+.empty #widget-zone,
+.rs-adding-widget .empty #noWidgetText {
+    display:none;
+}
+
+.empty #noWidgetText {
+    display:block;
+}
+
+#widgets-block .widget-change-position {
+    display:none;
+}
+
+.rs-adding-widget .empty #widget-zone {
+    display:flex;
+}
+
+@media (max-width: 1023px) {
+    #noWidgetText .text {
+        position:static;
+        text-align:center;
+        margin-bottom:50px;
+        font-size:65px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .admin-style .edit-mode .widget-content {
+        height:0;
+        min-height:0;
+        overflow:hidden;
+    }
+
+    .admin-style .widget-collection .item .add {
+        display:inline;
+    }
+
+    .admin-style .widget-collection .item .move-handle {
+        display:none;
+    }
+
+    #widget-zone .sortable-placeholder {
+        background-image:none;
+        min-height:0;
+    }
+
+    #widgets-block.cansort .widget-change-position {
+        display:block;
+    }
+}
+
+@media (min-width: 768px) {
+    #widget-zone {
+        min-height:calc(100vh - 250px);
+    }
+    .admin-style .widget-column {
+        width:49%;
+    }
+
+    .admin-style .widget .widget-title {
+        cursor:move;
+    }
+}
+
+@media (min-width: 1350px) {
+    .admin-style .widget-column {
+        width:33%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .admin-style .widget-column[data-column="1"],
+    .admin-style .widget-column[data-column="3"] {
+        width:27%;
+    }
+    .admin-style .widget-column[data-column="2"] {
+        width:44%;
+    }
+}
+.stateinfo .information {
+    margin:7px 22px 0;    
+    border-bottom:1px dotted #eee;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+
+    height:50px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.stateinfo .information .state {
+    -webkit-flex: 0 0 27px;
+    -ms-flex: 0 0 27px;
+    flex:0 0 27px;
+}
+
+.stateinfo .information .section {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+}
+
+.stateinfo .information .title {
+    font-size:14px;
+    color:#3f3f3f;
+    font-weight:bold;
+}
+
+.stateinfo .information .last-cycle {
+    font-size:11px;
+    color:#666;
+}
+
+.stateinfo .scan .actions,
+.stateinfo .problem .actions,
+.stateinfo .information .actions {
+    width:75px;
+    float:right;
+    padding-top:8px;
+    text-align:right;
+}
+
+.stateinfo .problem .actions .run,
+.stateinfo .information .actions .run {
+    width:29px;
+    height:29px;
+    display:inline-block;
+    border-radius:50%;
+    background:#ededed url(/modules/antivirus/view/img/play.svg) no-repeat 11px center;
+}
+
+.stateinfo .problem .actions .run:hover,
+.stateinfo .information .actions .run:hover {
+    background-color: #71b422;
+    background-position:-16px center;
+}
+
+.stateinfo .problem .actions .report,
+.stateinfo .information .actions .report {
+    width:29px;
+    height:29px;
+    display:inline-block;
+    background:url(/modules/antivirus/view/img/report.svg) no-repeat 8px center;
+    border:2px solid transparent;
+    border-radius:50%;
+}
+
+.stateinfo .information .actions .report:hover {
+    background-color:#e2e2e2;
+    background-position:-20px center;
+}
+
+.stateinfo .problem .actions .report:hover {
+    border:2px solid white;
+}
+
+.stateinfo .problem .actions {
+    padding-top:0;
+}
+
+.stateinfo .problem .actions .report {
+    background-position:-20px center;
+}
+
+.stateinfo .information .ok {
+    background:#71b422;
+    width:16px;
+    height:16px;
+    display:inline-block;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+            border-radius:10px;
+}
+
+.stateinfo .information .text {
+    color:#3d4754;
+    padding-top:8px;
+}
+
+.stateinfo .information .one-line .text {
+    padding-top:0;
+    line-height:50px;
+}
+
+.stateinfo .information .date {
+    color:#aaa;
+    font-size:11px;
+}
+
+.stateinfo .stateinfo-footer {
+    border-top:1px solid #e5e5e5;
+    margin:10px 22px 0;
+    padding:20px 6px 20px 0;
+}
+
+.stateinfo .stateinfo-footer .trustzone,
+.stateinfo .stateinfo-footer .settings {
+    float:right;
+    width:20px;
+    height:20px;
+    background:url(/modules/antivirus/view/img/options.png) no-repeat;
+    opacity:0.5;
+    display:inline-block;
+    margin-left:17px;
+}
+
+.stateinfo .stateinfo-footer .trustzone {
+    background:url(/modules/antivirus/view/img/trust.png) no-repeat;
+}
+
+.stateinfo .stateinfo-footer .trustzone:hover,
+.stateinfo .stateinfo-footer .settings:hover {
+    opacity:1;
+}
+
+.stateinfo .stateinfo-footer .protect-img,
+.stateinfo .stateinfo-footer .protect {
+    vertical-align:middle;
+}
+
+.stateinfo .stateinfo-footer .protect {
+    margin-left:10px;
+    color: #777;
+}
+
+.stateinfo .stateinfo-antivirus .information {
+    border-bottom:0;
+}
+
+.stateinfo .stateinfo-checksum .scan,
+.stateinfo .stateinfo-checksum .information {
+    margin-top:15px;
+    padding-top:0;    
+}
+
+.stateinfo .stateinfo-checksum .problem {
+    margin-top:3px;
+}
+
+.stateinfo .trouble {
+    background: #ffdf71;
+    padding:25px 22px;
+    min-height: 50px;
+}
+
+.stateinfo .trouble p {
+    margin:0 0 16px;
+}
+
+.stateinfo .stateinfo-button {
+    padding:0 10px;
+    height:31px;
+    line-height:31px;
+    display:inline-block;
+    margin-bottom:3px;
+    border-radius:20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;;
+}
+
+.stateinfo .stateinfo-button:hover {
+    opacity:0.9;
+    color:black;
+}
+
+.stateinfo .stateinfo-button.white-fill {
+    background: white;
+    border:2px solid white;
+}
+
+.stateinfo .stateinfo-button.white-border {
+    border:2px solid white;
+    color:white;
+}
+
+.stateinfo .stateinfo-button.white-border:hover {
+    background-color:white;
+    color:black;
+}
+
+.stateinfo .stateinfo-button.gray-fill {
+    background:#e2e2e2;
+}
+
+.stateinfo .problem {
+    background:#fa5b45;
+    padding:18px 23px;
+    color:white;
+    margin:0 -1px 3px;
+}
+
+.stateinfo .problem p {
+    margin:0 0 16px;
+    line-height:20px;
+}
+
+.stateinfo .problem-info {
+    margin-right:100px;
+}
+
+.stateinfo .scan {
+    background: #fbfbfb;
+    height:50px;
+    position:relative;
+    padding:0 22px;    
+}
+
+.stateinfo .scan .progress {
+    height:50px;
+    background:#a2d960;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.stateinfo .scan .info,
+.stateinfo .scan .actions {
+    position:relative;
+}
+
+.stateinfo .scan .info {
+    font-size:12px;
+    height:50px;
+    line-height:50px;
+    margin-right:80px;
+}
+
+.stateinfo .small-text {
+    display:none;
+}
+.widget .last-watch {
+    padding:0 7px 3px;
+    position:relative;
+}
+
+.widget .last-watch .prev,
+.widget .last-watch .next {
+    position: absolute;
+    top:50%;
+    left:20px;
+
+    width:30px;
+    height:30px;
+    line-height:100%;
+    margin-top:-32px;
+    font-size:24px;
+
+    border:1px solid #aaa;
+    color:#aaa;
+    border-radius:50%;
+    text-align:center;
+}
+
+.widget .last-watch .zmdi {
+    vertical-align: middle;
+}
+
+.widget .last-watch .next {
+    left:auto;
+    right:20px;
+}
+
+.widget .last-watch .prev:hover,
+.widget .last-watch .next:hover {
+    color:#333;
+    border-color:#333;
+}
+
+
+.widget .last-watch .picture {
+    margin:0 33px;
+    height:150px;
+    text-align:center;
+    overflow:hidden;
+}
+
+.widget .last-watch .description {
+    margin:10px 0;
+    text-align:center;
+    color: #3d4754;
+}
+
+.widget .last-watch .description a {
+    text-decoration: underline;
+}
+
+.widget .last-watch .description .title {
+    font-size:14px;
+}
+
+.widget .last-watch .description .path,
+.widget .last-watch .description .time,
+.widget .last-watch .description .login
+ {
+    font-size:10px;
+}
+
+.widget .last-watch .empty {
+    text-align:center;
+    padding-top:35px;
+    color: #808080;
+}
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(/resource/css/common/owlcarousel/owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+.admin-style .best-sellers .owl-stage
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-style .best-sellers {
+    padding:0 20px 20px;
+}
+
+.admin-style .best-sellers_title {
+    text-align:center;
+}
+
+.admin-style .best-sellers_description {
+    margin-top:30px;
+    font-size:15px;
+    line-height:170%;
+    text-align:center;
+}
+
+.admin-style .best-sellers_description a {
+    text-decoration: underline;
+}
+
+.admin-style .best-sellers_actions {
+    margin:30px 0 20px;
+    text-align:center;
+}
+
+.admin-style .best-sellers_action {
+    border:2px solid !important;
+    padding:10px !important;
+}
+.mp-container {
+  padding:0 20px;
+}
+
+.mp-modules__list {
+    -webkit-display:flex;
+       -moz-display:flex;
+            display:flex;
+}
+
+.mp-modules__list.no-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.mp-modules__list .item {
+    margin-bottom:20px;
+    flex:1;
+}
+
+.mp-modules__list .item:first-child {
+    margin-right:40px;
+}
+
+.mp-modules__list .item img {
+    max-width:100%;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.mp-modules__list .item .description {
+    margin-top:10px;
+}
+
+@media(max-width:480px) {
+    .mp-modules__list {
+        display:block;
+    }
+
+    .mp-modules__list .item:first-child {
+        margin-right:0;
+    }
+}
+.orderStatusesData {
+    margin:20px 0;
+}
+
+.flc-orderStatusesLegend {
+    margin-left:20px;
+    margin-right:20px;
+}
+.sell-widget .placeholder {
+    margin:5px 20px 10px;
+}
+
+.sell-widget .year-filter-item {
+    padding:1px 17px;
+}
+/* Стили выбора дат на отдельной странице */
+/**
+.stat-date-range.page {
+    background:#767f8c;
+    padding:20px;
+    color:white;
+}
+
+.stat-date-range.page .date-presets {
+    overflow:hidden;
+    display:inline-block;
+    vertical-align: middle;
+    padding-right:1px;
+    margin-right:20px;
+}
+
+.stat-date-range.page .date-presets .item {
+    padding:0 15px;
+    background:white;
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;
+    border:1px solid #3f3f3f;
+    margin-right:-1px;
+}
+
+.stat-date-range.page .date-presets .item.act {
+    background:#ffdf71;
+}
+
+.stat-date-range.page .date-presets .item:hover {
+    background:#ffdf71;
+}
+
+.stat-date-range.page .date-presets .item:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.stat-date-range.page .date-presets .item:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.stat-date-range input[type=text] {
+    height:30px;
+    line-height:30px;
+    vertical-align:middle;
+    border:1px solid #3f3f3f;
+    padding-left:10px;
+    padding-top:0;
+    padding-bottom:0;
+    width:70px;
+}
+
+.stat-date-range input[type=submit] {
+    height:32px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+         box-sizing:border-box;
+    vertical-align:middle;
+    margin-left:-20px;
+    border:1px solid #3f3f3f;
+    cursor:pointer;
+    background: -moz-linear-gradient(top, #eaeaea, #e2e2e2);
+    background: -webkit-linear-gradient(top, #eaeaea, #e2e2e2);
+    background: -o-linear-gradient(top, #eaeaea, #e2e2e2);
+    background: -ms-linear-gradient(top, #eaeaea, #e2e2e2);
+    background: linear-gradient(top, #eaeaea, #e2e2e2);
+}
+
+.stat-date-range .only-wide {
+    margin-left:30px;
+}
+
+.stat-date-range .only-wide .dash {
+    margin-left:-17px;
+}
+
+.stat-date-range .date-presets-current {
+    display:none;
+}**/
+
+/* Стили виджета */
+
+/*
+.widget .stat-date-range {
+    background:#efefef;
+    padding:10px;
+}
+
+.widget .stat-date-range .date-presets {
+    margin-right:3px;
+}
+
+.widget .stat-date-range .date-presets-current {
+    display:block;
+    color:black;
+}
+
+.widget .stat-date-range .only-wide {
+    margin-left:0;
+    display:block;
+    text-align:center;
+    position:relative;
+    z-index:1;
+}
+
+.widget .stat-date-range .from,
+.widget .stat-date-range .to {
+    width: 21%;
+    font-size:11px;
+    padding-left:2px;
+    height:28px;
+    line-height:28px;
+    border-color:#aaa;
+}
+
+.widget .stat-date-range input[type=submit] {
+    height:30px;
+    border-color:#aaa;
+}
+
+.widget .stat-date-range .date-presets-current {
+    display:block;
+    text-align:center;
+    font-size:11px;
+    background:#e2e2e2;
+    cursor:pointer;
+}
+
+.widget .stat-date-range .date-presets {
+    display:block;
+    background:#efefef;
+    margin-bottom:5px;
+    margin-left:-10px;
+    margin-right:-10px;
+    margin-top:-10px;
+    height:20px;
+    line-height:20px;
+    padding:0;
+    position:relative;
+    z-index:2;
+    overflow:visible;
+}
+
+.widget .stat-date-range .date-presets .date-presets-list {
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background: white;
+    -webkit-box-shadow:0 3px 3px #aaa;
+    -moz-box-shadow:0 3px 3px #aaa;
+         box-shadow:0 3px 3px #aaa;
+}
+
+.widget .stat-date-range .date-presets .item {
+    height:50px;
+    line-height:50px;
+    width:25%;
+    float:left;
+    text-align:center;
+}
+
+.widget .stat-date-range .date-presets .item:hover {
+    background:#ffdf71;
+    color:black;
+}
+
+.widget .stat-date-range .date-presets-list {
+    overflow:hidden;
+    height:0;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.2s ease 0.3s,
+               height 0.2s ease 0.5s,
+               visibility 0s ease 0.5s;
+}
+
+.widget .stat-date-range .date-presets:hover .date-presets-list {
+    visibility:visible;
+    height:50px;
+    opacity:1;
+    transition:opacity 0.2s ease;
+}
+
+.widget .stat-nodata {
+    color: #808080;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.widget .stat-date-range .date-presets-ddown {
+    display:inline-block;
+    width:8px;
+    height:5px;
+    background:url(/modules/statistic/view/img/ddown.png) no-repeat;
+    margin-left:7px;
+    vertical-align:middle;
+}
+
+.widget .stat-date-range .only-wide .dash {
+    margin-left:-20px;
+}
+
+/* Виджет в центральной колонке
+
+#col_center .widget .stat-date-range .date-presets {
+    display:inline-block;
+    position:static;
+    margin:-10px 0;
+    height:32px;
+    line-height:32px;
+}
+
+#col_center .widget .stat-date-range .date-presets-current {
+    background:none;
+    margin:-10px 0;
+    height:32px;
+    line-height:32px;
+    text-align:right;
+    margin-right:15px;
+}
+
+#col_center .widget .stat-date-range .only-wide {
+    display:inline-block;
+}
+
+#col_center .widget .stat-date-range {
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+#col_center .widget .stat-date-range .from,
+#col_center .widget .stat-date-range .to {
+    width:100px;
+}
+
+.widget .stat-last-period {
+    background: #efefef none repeat scroll 0 0;
+    padding-bottom: 5px;
+    padding-top: 0;
+    text-align: center;
+    border-bottom:1px solid #ddd;
+}
+
+*/
+
+.widget .stat-nodata {
+    color: #808080;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.stat-nowrap {
+    white-space:nowrap;
+}
+
+.stat-checker{
+    width: 25px;
+}
+
+.wtable.stat-key-table td {
+    vertical-align:bottom;
+}
+
+.stat-value {
+    font-weight:bold;
+    font-size:16px;
+}
+
+.stat-report .graph {
+    height:300px;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.stat-report .graph{
+    margin-bottom: 70px;
+}
+
+.stat-report .graph.week{
+    margin-bottom: 100px;
+}
+
+.stat-report .graph.ticks-rotate-60 .flot-x-axis .flot-tick-label {
+    white-space: nowrap;
+    transform: translate(-9px, 0) rotate(-60deg);
+    -webkit-transform: translate(-9px, 0) rotate(-60deg);
+    -moz-transform: translate(-9px, 0) rotate(-60deg);
+    -o-transform: translate(-9px, 0) rotate(-60deg);
+    -ms-transform: translate(-9px, 0) rotate(-60deg);
+    text-indent: -100%;
+    transform-origin: top right;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -o-transform-origin: top right;
+    -ms-transform-origin: top right;
+    text-align: right !important;
+}
+
+.stat-report sup.red{
+    color: red;
+}
+
+.stat-report sup.green{
+    color: green;
+}
+
+.stat-funnel__row {
+    display:flex;
+    margin:0 20px;
+}
+
+.stat-funnel__legend {
+    flex:1;
+    padding:19px 0;
+}
+
+.stat-funnel__funnel {
+    flex:1;
+    position:relative;
+    padding:19px 0;
+}
+
+.stat-funnel__bar {
+    position:absolute;
+    top:0;
+    left:0;
+    background:#fed42b;
+    height:100%;
+}
+
+.stat-funnel__number {
+    padding-left:17px;
+    color:#333;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.stat-funnel__row:nth-child(even) .stat-funnel__bar {
+    background-color:#ffb516;
+}
+
+.stat-funnel__number {
+    position:relative;
+}
+
+
+
+
+.stat-funnel .funnel-row {
+    text-align: center;
+    margin: 2px 10px;
+    color: white;
+    position:relative;
+}
+
+.stat-funnel .funnel-row .progress {
+    display: block;
+    margin: 0 auto;
+}
+
+.widget .stat-funnel .funnel-row .progress {
+    -webkit-border-radius:0 0 6px 6px;
+    -moz-border-radius:0 0 6px 6px;
+         border-radius:0 0 6px 6px;
+    opacity:0.8;
+}
+
+.stat-funnel .c1 { color:#A8B8D9; }
+.stat-funnel .c2 { color:#DDC67B; }
+.stat-funnel .c3 { color:#B7918C; }
+.stat-funnel .c4 { color:#587579; }
+.stat-funnel .c5 { color:#8A8E91; }
+.stat-funnel .c6 { color:#B8B09D; }
+.stat-funnel .c7 { color:#855A5C; }
+
+.stat-funnel .bg1 { background-color:#A8B8D9; }
+.stat-funnel .bg2 { background-color:#DDC67B; }
+.stat-funnel .bg3 { background-color:#B7918C; }
+.stat-funnel .bg4 { background-color:#587579; }
+.stat-funnel .bg5 { background-color:#8A8E91; }
+.stat-funnel .bg6 { background-color:#B8B09D; }
+.stat-funnel .bg7 { background-color:#855A5C; }
+
+.widget .stat-funnel .funnel-row .title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    color:black;
+}
+
+.widget .stat-funnel .funnel-row .progress {
+    height:50px;
+    line-height:50px;
+}
+
+.widget .stat-funnel .funnel-row {
+    background:#fafafa;
+    margin:2px 0;
+}
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.admin-style .ui-helper-hidden { display: none; }
+.admin-style .ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.admin-style .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.admin-style .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.admin-style .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .admin-style .ui-helper-clearfix { height:1%; }
+.admin-style .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.admin-style .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.admin-style .ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.admin-style .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.admin-style .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:1000; }
+
+
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jquit.com/builder/#gcc=ffffff&gcb=d4d4d4&gct=525252&gci=d4d4d4&pcc=d4d4d4&acb=525252&o=ffffff&ghc=3AABD1&ght=ffffff&ghi=ffffff&gdc=d4d4d4&gdb=d4d4d4&gdt=525252&tdc=3AABD1&tdb=3AABD1&tdt=ffffff&tdi=ffffff&ddc=d4d4d4&ddb=d4d4d4&ddt=525252&pxd=000000&asc=3AABD1&ast=ffffff&goc=bdbdbd&gob=bdbdbd&got=ffffff&toc=2988a8&tob=2988a8&tot=ffffff&toi=ffffff&doc=000000&dob=000000&dot=ffffff&pxa=525252&gac=000000&gab=000000&gat=ffffff&tac=ffffff&tab=d4d4d4&tat=525252&tai=d4d4d4&dac=3AABD1&dab=3AABD1&dat=ffffff&dic=d4d4d4&dib=3AABD1&dit=ffffff&gic=efdca9&gib=efdca9&git=525252&gii=525252&ec=c31d1d&eb=c31d1d&et=ffffff&ei=ffffff
+ */
+
+
+/* Component containers
+----------------------------------*/
+.admin-style .ui-widget { font-family: Arial, Tahoma; font-size: 14px; }
+.admin-style .ui-widget .ui-widget { font-size: 1em;  z-index: 100;}
+.admin-style .ui-widget input, .admin-style .ui-widget select, .admin-style .ui-widget textarea, .admin-style .ui-widget button { font-family: Arial, Tahoma, sans-serif; font-size: 1em; }
+.admin-style .ui-widget-content { border: 1px solid #dddddd; background: #ffffff; color: #444444; }
+.admin-style .ui-widget-header { background: #dddddd; color: #444444; }
+
+/* Interaction Cues
+----------------------------------*/
+.admin-style .ui-state-highlight, .admin-style .ui-widget-content .ui-state-highlight, .admin-style .ui-widget-header .ui-state-highlight  {border: 1px solid #cccccc; background: #ffffff; color: #444444; }
+.admin-style .ui-state-highlight a, .admin-style .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #444444; }
+.admin-style .ui-state-error, .admin-style .ui-widget-content .ui-state-error, .admin-style .ui-widget-header .ui-state-error {border: 1px solid #ff0084; background: #ffffff; color: #222222; }
+.admin-style .ui-state-error a, .admin-style .ui-widget-content .ui-state-error a, .admin-style .ui-widget-header .ui-state-error a { color: #222222; }
+.admin-style .ui-state-error-text, .admin-style .ui-widget-content .ui-state-error-text, .admin-style .ui-widget-header .ui-state-error-text { color: #222222; }
+.admin-style .ui-priority-primary, .admin-style .ui-widget-content .ui-priority-primary, .admin-style .ui-widget-header .ui-priority-primary { font-weight: normal; }
+.admin-style .ui-priority-secondary, .admin-style .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.admin-style .ui-state-disabled, .admin-style .ui-widget-content .ui-state-disabled, .admin-style .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* positioning */
+.admin-style .ui-icon-carat-1-n { background-position: 0 0; }
+.admin-style .ui-icon-carat-1-ne { background-position: -16px 0; }
+.admin-style .ui-icon-carat-1-e { background-position: -32px 0; }
+.admin-style .ui-icon-carat-1-se { background-position: -48px 0; }
+.admin-style .ui-icon-carat-1-s { background-position: -64px 0; }
+.admin-style .ui-icon-carat-1-sw { background-position: -80px 0; }
+.admin-style .ui-icon-carat-1-w { background-position: -96px 0; }
+.admin-style .ui-icon-carat-1-nw { background-position: -112px 0; }
+.admin-style .ui-icon-carat-2-n-s { background-position: -128px 0; }
+.admin-style .ui-icon-carat-2-e-w { background-position: -144px 0; }
+.admin-style .ui-icon-triangle-1-n { background-position: 0 -16px; }
+.admin-style .ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.admin-style .ui-icon-triangle-1-e { background-position: -32px -16px; }
+.admin-style .ui-icon-triangle-1-se { background-position: -48px -16px; }
+.admin-style .ui-icon-triangle-1-s { background-position: -64px -16px; }
+.admin-style .ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.admin-style .ui-icon-triangle-1-w { background-position: -96px -16px; }
+.admin-style .ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.admin-style .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.admin-style .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.admin-style .ui-icon-arrow-1-n { background-position: 0 -32px; }
+.admin-style .ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.admin-style .ui-icon-arrow-1-e { background-position: -32px -32px; }
+.admin-style .ui-icon-arrow-1-se { background-position: -48px -32px; }
+.admin-style .ui-icon-arrow-1-s { background-position: -64px -32px; }
+.admin-style .ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.admin-style .ui-icon-arrow-1-w { background-position: -96px -32px; }
+.admin-style .ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.admin-style .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.admin-style .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.admin-style .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.admin-style .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.admin-style .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.admin-style .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.admin-style .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.admin-style .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.admin-style .ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.admin-style .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.admin-style .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.admin-style .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.admin-style .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.admin-style .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.admin-style .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.admin-style .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.admin-style .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.admin-style .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.admin-style .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.admin-style .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.admin-style .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.admin-style .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.admin-style .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.admin-style .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.admin-style .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.admin-style .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.admin-style .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.admin-style .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.admin-style .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.admin-style .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.admin-style .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.admin-style .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.admin-style .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.admin-style .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.admin-style .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.admin-style .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.admin-style .ui-icon-arrow-4 { background-position: 0 -80px; }
+.admin-style .ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.admin-style .ui-icon-extlink { background-position: -32px -80px; }
+.admin-style .ui-icon-newwin { background-position: -48px -80px; }
+.admin-style .ui-icon-refresh { background-position: -64px -80px; }
+.admin-style .ui-icon-shuffle { background-position: -80px -80px; }
+.admin-style .ui-icon-transfer-e-w { background-position: -96px -80px; }
+.admin-style .ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.admin-style .ui-icon-folder-collapsed { background-position: 0 -96px; }
+.admin-style .ui-icon-folder-open { background-position: -16px -96px; }
+.admin-style .ui-icon-document { background-position: -32px -96px; }
+.admin-style .ui-icon-document-b { background-position: -48px -96px; }
+.admin-style .ui-icon-note { background-position: -64px -96px; }
+.admin-style .ui-icon-mail-closed { background-position: -80px -96px; }
+.admin-style .ui-icon-mail-open { background-position: -96px -96px; }
+.admin-style .ui-icon-suitcase { background-position: -112px -96px; }
+.admin-style .ui-icon-comment { background-position: -128px -96px; }
+.admin-style .ui-icon-person { background-position: -144px -96px; }
+.admin-style .ui-icon-print { background-position: -160px -96px; }
+.admin-style .ui-icon-trash { background-position: -176px -96px; }
+.admin-style .ui-icon-locked { background-position: -192px -96px; }
+.admin-style .ui-icon-unlocked { background-position: -208px -96px; }
+.admin-style .ui-icon-bookmark { background-position: -224px -96px; }
+.admin-style .ui-icon-tag { background-position: -240px -96px; }
+.admin-style .ui-icon-home { background-position: 0 -112px; }
+.admin-style .ui-icon-flag { background-position: -16px -112px; }
+.admin-style .ui-icon-calendar { background-position: -32px -112px; }
+.admin-style .ui-icon-cart { background-position: -48px -112px; }
+.admin-style .ui-icon-pencil { background-position: -64px -112px; }
+.admin-style .ui-icon-clock { background-position: -80px -112px; }
+.admin-style .ui-icon-disk { background-position: -96px -112px; }
+.admin-style .ui-icon-calculator { background-position: -112px -112px; }
+.admin-style .ui-icon-zoomin { background-position: -128px -112px; }
+.admin-style .ui-icon-zoomout { background-position: -144px -112px; }
+.admin-style .ui-icon-search { background-position: -160px -112px; }
+.admin-style .ui-icon-wrench { background-position: -176px -112px; }
+.admin-style .ui-icon-gear { background-position: -192px -112px; }
+.admin-style .ui-icon-heart { background-position: -208px -112px; }
+.admin-style .ui-icon-star { background-position: -224px -112px; }
+.admin-style .ui-icon-link { background-position: -240px -112px; }
+.admin-style .ui-icon-cancel { background-position: 0 -128px; }
+.admin-style .ui-icon-plus { background-position: -16px -128px; }
+.admin-style .ui-icon-plusthick { background-position: -32px -128px; }
+.admin-style .ui-icon-minus { background-position: -48px -128px; }
+.admin-style .ui-icon-minusthick { background-position: -64px -128px; }
+.admin-style .ui-icon-close { background-position: -80px -128px; }
+.admin-style .ui-icon-closethick { background-position: -96px -128px; }
+.admin-style .ui-icon-key { background-position: -112px -128px; }
+.admin-style .ui-icon-lightbulb { background-position: -128px -128px; }
+.admin-style .ui-icon-scissors { background-position: -144px -128px; }
+.admin-style .ui-icon-clipboard { background-position: -160px -128px; }
+.admin-style .ui-icon-copy { background-position: -176px -128px; }
+.admin-style .ui-icon-contact { background-position: -192px -128px; }
+.admin-style .ui-icon-image { background-position: -208px -128px; }
+.admin-style .ui-icon-video { background-position: -224px -128px; }
+.admin-style .ui-icon-script { background-position: -240px -128px; }
+.admin-style .ui-icon-alert { background-position: 0 -144px; }
+.admin-style .ui-icon-info { background-position: -16px -144px; }
+.admin-style .ui-icon-notice { background-position: -32px -144px; }
+.admin-style .ui-icon-help { background-position: -48px -144px; }
+.admin-style .ui-icon-check { background-position: -64px -144px; }
+.admin-style .ui-icon-bullet { background-position: -80px -144px; }
+.admin-style .ui-icon-radio-off { background-position: -96px -144px; }
+.admin-style .ui-icon-radio-on { background-position: -112px -144px; }
+.admin-style .ui-icon-pin-w { background-position: -128px -144px; }
+.admin-style .ui-icon-pin-s { background-position: -144px -144px; }
+.admin-style .ui-icon-play { background-position: 0 -160px; }
+.admin-style .ui-icon-pause { background-position: -16px -160px; }
+.admin-style .ui-icon-seek-next { background-position: -32px -160px; }
+.admin-style .ui-icon-seek-prev { background-position: -48px -160px; }
+.admin-style .ui-icon-seek-end { background-position: -64px -160px; }
+.admin-style .ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.admin-style .ui-icon-seek-first { background-position: -80px -160px; }
+.admin-style .ui-icon-stop { background-position: -96px -160px; }
+.admin-style .ui-icon-eject { background-position: -112px -160px; }
+.admin-style .ui-icon-volume-off { background-position: -128px -160px; }
+.admin-style .ui-icon-volume-on { background-position: -144px -160px; }
+.admin-style .ui-icon-power { background-position: 0 -176px; }
+.admin-style .ui-icon-signal-diag { background-position: -16px -176px; }
+.admin-style .ui-icon-signal { background-position: -32px -176px; }
+.admin-style .ui-icon-battery-0 { background-position: -48px -176px; }
+.admin-style .ui-icon-battery-1 { background-position: -64px -176px; }
+.admin-style .ui-icon-battery-2 { background-position: -80px -176px; }
+.admin-style .ui-icon-battery-3 { background-position: -96px -176px; }
+.admin-style .ui-icon-circle-plus { background-position: 0 -192px; }
+.admin-style .ui-icon-circle-minus { background-position: -16px -192px; }
+.admin-style .ui-icon-circle-close { background-position: -32px -192px; }
+.admin-style .ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.admin-style .ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.admin-style .ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.admin-style .ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.admin-style .ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.admin-style .ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.admin-style .ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.admin-style .ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.admin-style .ui-icon-circle-zoomin { background-position: -176px -192px; }
+.admin-style .ui-icon-circle-zoomout { background-position: -192px -192px; }
+.admin-style .ui-icon-circle-check { background-position: -208px -192px; }
+.admin-style .ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.admin-style .ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.admin-style .ui-icon-circlesmall-close { background-position: -32px -208px; }
+.admin-style .ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.admin-style .ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.admin-style .ui-icon-squaresmall-close { background-position: -80px -208px; }
+.admin-style .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.admin-style .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.admin-style .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.admin-style .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.admin-style .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.admin-style .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.admin-style .ui-corner-all, .admin-style .ui-corner-top, .admin-style .ui-corner-left, .admin-style .ui-corner-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; }
+.admin-style .ui-corner-all, .admin-style .ui-corner-top, .admin-style .ui-corner-right, .admin-style .ui-corner-tr { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 0; }
+.admin-style .ui-corner-all, .admin-style .ui-corner-bottom, .admin-style .ui-corner-left, .admin-style .ui-corner-bl { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -khtml-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+.admin-style .ui-corner-all, .admin-style .ui-corner-bottom, .admin-style .ui-corner-right, .admin-style .ui-corner-br { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; -khtml-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+
+/* Overlays */
+.admin-style .ui-widget-overlay { background: #000; opacity: .40;filter:Alpha(Opacity=40); }
+.admin-style .ui-widget-shadow { margin: -4px 0 0 -4px; padding: 4px; background: #aaaaaa; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 0px; -khtml-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; }/*
+ * jQuery UI Resizable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.admin-style .ui-resizable { position: relative;}
+.admin-style .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block; }
+.admin-style .ui-resizable-disabled .ui-resizable-handle, .admin-style .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.admin-style .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.admin-style .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.admin-style .ui-resizable-e { cursor: e-resize; width: 7px; right: 0; top: 0; height: 100%; }
+.admin-style .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.admin-style .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.admin-style .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.admin-style .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.admin-style .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/*
+ * jQuery UI Selectable 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+.admin-style .ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+/*
+ * jQuery UI Accordion 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+.admin-style .ui-accordion { width: 100%; }
+.admin-style .ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.admin-style .ui-accordion .ui-accordion-li-fix { display: inline; }
+.admin-style .ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.admin-style .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+.admin-style .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.admin-style .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: 2px; top: 50%; margin-top: -8px; }
+.admin-style .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.admin-style .ui-accordion .ui-accordion-content-active { display: block; }
+/*
+ * jQuery UI Autocomplete 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+.admin-style .ui-autocomplete { position: absolute; cursor: default; z-index:2}
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.16
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+.admin-style .ui-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+}
+.admin-style .ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.admin-style .ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+.admin-style .ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+.admin-style .ui-menu .ui-menu-item a.ui-state-hover,
+.admin-style .ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+/*
+ * jQuery UI Button 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.admin-style .ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.admin-style .ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.admin-style .ui-button-icons-only { width: 3.4em; }
+button.ui-button-icons-only { width: 3.7em; }
+
+/*button text element */
+.admin-style .ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.admin-style .ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.admin-style .ui-button-icon-only .ui-button-text, .admin-style .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.admin-style .ui-button-text-icon-primary .ui-button-text, .admin-style .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.admin-style .ui-button-text-icon-secondary .ui-button-text, .admin-style .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.admin-style .ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+/*.ui-button-icon-only .ui-icon, .admin-style .ui-button-text-icon-primary .ui-icon, .admin-style .ui-button-text-icon-secondary .ui-icon, .admin-style .ui-button-text-icons .ui-icon, .admin-style .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.admin-style .ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.admin-style .ui-button-text-icon-primary .ui-button-icon-primary, .admin-style .ui-button-text-icons .ui-button-icon-primary, .admin-style .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.admin-style .ui-button-text-icon-secondary .ui-button-icon-secondary, .admin-style .ui-button-text-icons .ui-button-icon-secondary, .admin-style .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.admin-style .ui-button-text-icons .ui-button-icon-secondary, .admin-style .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+*/
+
+ /*button icon element(s) */
+.admin-style .ui-button-icon-only .ui-icon, .admin-style .ui-button-text-icon-primary .ui-icon, .admin-style .ui-button-text-icon-secondary .ui-icon, .admin-style .ui-button-text-icons .ui-icon, .admin-style .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -12px; }
+.admin-style .ui-button-icon-only .ui-icon { left: 50%; margin-left: -12px; }
+.admin-style .ui-button-text-icon-primary .ui-button-icon-primary, .admin-style .ui-button-text-icons .ui-button-icon-primary, .admin-style .ui-button-icons-only .ui-button-icon-primary { left: .35em; }
+.admin-style .ui-button-text-icon-secondary .ui-button-icon-secondary, .admin-style .ui-button-text-icons .ui-button-icon-secondary, .admin-style .ui-button-icons-only .ui-button-icon-secondary { right: .35em; }
+.admin-style .ui-button-text-icons .ui-button-icon-secondary, .admin-style .ui-button-icons-only .ui-button-icon-secondary { right: .35em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button sets*/
+.admin-style .ui-buttonset { margin-right: 7px; }
+.admin-style .ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+/*
+ * jQuery UI Dialog 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+ .ui-dialog,
+.admin-style .ui-dialog { position: fixed; width: 300px; box-shadow:0 0 5px #aaa; background: white; z-index:1002;}
+.admin-style .ui-dialog .ui-dialog-titlebar { padding-top:15px; padding-bottom:15px; border-bottom:1px solid #e4e4e4; position: relative; background: white; }
+.admin-style .ui-dialog .ui-dialog-title { float: left; display: block; padding:0 25px 0 20px; font-size:20px; }
+.admin-style .ui-dialog .ui-dialog-title * {
+    font-size:20px;
+}
+
+.admin-style .ui-dialog .ui-state-default.ui-dialog-titlebar-close,
+.admin-style .ui-dialog .ui-dialog-titlebar-close {
+    background:none;
+    position:absolute;
+    right:10px;
+    top:13px;
+    border:none;
+    display:block;
+    margin:0;
+    padding:0;
+    width:32px;
+    height:32px;
+    line-height:32px;
+    border-radius:50%;
+    font-weight:normal !important;
+}
+
+.admin-style .ui-dialog .ui-dialog-titlebar-close:before {
+    content:"\00d7";
+    font-size:33px;
+}
+
+.admin-style .ui-dialog .ui-dialog-titlebar-close:hover {
+    color:white;
+    background:#666;
+}
+
+.admin-style .ui-dialog .ui-dialog-titlebar-close > span {
+    display:none;
+}
+
+
+.admin-style .ui-dialog .ui-dialog-content,
+.admin-style .ui-dialog .ui-dialog-content { position: relative; border: 0; padding:3px 20px 20px; background: none; overflow: auto; zoom: 1; }
+.admin-style .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.admin-style .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.admin-style .ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.admin-style .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 2px; bottom: 2px; }
+.admin-style .ui-draggable .ui-dialog-titlebar { cursor: move; }
+/*
+ * jQuery UI Slider 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.admin-style .ui-slider { position: relative; text-align: left; }
+.admin-style .ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.admin-style .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.admin-style .ui-slider-horizontal { height: .8em; }
+.admin-style .ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.admin-style .ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.admin-style .ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.admin-style .ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.admin-style .ui-slider-vertical { width: .8em; height: 100px; }
+.admin-style .ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.admin-style .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.admin-style .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.admin-style .ui-slider-vertical .ui-slider-range-max { top: 0; }/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.admin-style .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.admin-style .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.admin-style .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.admin-style .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.admin-style .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.admin-style .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .admin-style .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .admin-style .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.admin-style .ui-tabs .ui-tabs-nav li a, .admin-style .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.admin-style .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.admin-style .ui-tabs .ui-tabs-hide { display: none !important; }
+/*
+ * jQuery UI Datepicker 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+.admin-style .ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; border: none;  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+.admin-style .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.admin-style .ui-datepicker .ui-datepicker-prev, .admin-style .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.admin-style .ui-datepicker .ui-datepicker-prev-hover, .admin-style .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.admin-style .ui-datepicker .ui-datepicker-prev { left:2px; }
+.admin-style .ui-datepicker .ui-datepicker-next { right:2px; }
+.admin-style .ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.admin-style .ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.admin-style .ui-datepicker .ui-datepicker-prev span, .admin-style .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.admin-style .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.admin-style .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.admin-style .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.admin-style .ui-datepicker select.ui-datepicker-month,
+.admin-style .ui-datepicker select.ui-datepicker-year { width: 49%;}
+.admin-style .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.admin-style .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: normal; border: 0;  }
+.admin-style .ui-datepicker td { border: 0; padding: 1px; }
+.admin-style .ui-datepicker td span, .admin-style .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.admin-style .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.admin-style .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.admin-style .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.admin-style .ui-datepicker.ui-datepicker-multi { width:auto; }
+.admin-style .ui-datepicker-multi .ui-datepicker-group { float:left; }
+.admin-style .ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.admin-style .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.admin-style .ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.admin-style .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.admin-style .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.admin-style .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.admin-style .ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.admin-style .ui-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+.admin-style .ui-datepicker-rtl { direction: rtl; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.admin-style .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.admin-style .ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}/*
+ * jQuery UI Progressbar 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Progressbar#theming
+ */
+.admin-style .ui-progressbar { height:2em; text-align: left; }
+.admin-style .ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+
+/* General */
+.admin-style .ui-widget{font-family:Arial, Tahoma;}
+
+/* Interaction states
+----------------------------------*/
+.admin-style .ui-state-default, .admin-style .ui-widget-content .ui-state-default, .admin-style .ui-widget-header .ui-state-default { border:2px solid #dddddd;background:inherit; font-weight: bold; text-decoration:none; }
+.admin-style .ui-state-default a, .admin-style .ui-state-default a:link, .admin-style .ui-state-default a:visited { text-decoration: none; }
+.admin-style .ui-state-hover, .admin-style .ui-widget-content .ui-state-hover, .admin-style .ui-widget-header .ui-state-hover, .admin-style .ui-state-focus, .admin-style .ui-widget-content .ui-state-focus, .admin-style .ui-widget-header .ui-state-focus { color: #ffffff; border-width:2px;}
+.admin-style .ui-state-hover a, .admin-style .ui-state-hover a:hover { color: #ffffff; text-decoration: none; }
+.admin-style .ui-state-active, .admin-style .ui-widget-content .ui-state-active, .admin-style .ui-widget-header .ui-state-active { border: 1px solid #dddddd; font-weight: bold; color: #ff0084;}
+.admin-style .ui-state-active a, .admin-style .ui-state-active a:link, .admin-style .ui-state-active a:visited { color: #ff0084; text-decoration: none; }
+.admin-style .ui-widget :active { outline: none; }
+
+/* Accordion */
+.admin-style .ui-accordion-header{border:2px solid;}
+.admin-style .ui-accordion .ui-accordion-header{margin-top:2px;}
+.admin-style .ui-accordion-content{border:2px solid;border-top:none;margin-bottom:3px !important;}
+.admin-style .ui-accordion .ui-accordion-header a { font-size: 1.0em; padding: .6em .3em .5em 2.9em; font-weight:bold;}
+.admin-style .ui-accordion > .ui-state-active a, .admin-style .ui-accordion > div > h3.ui-state-active a  { padding-bottom:.8em;}
+/*.ui-accordion .ui-accordion-header .ui-icon{margin-top:-12px;}*/
+.admin-style .ui-accordion > .ui-state-active, .admin-style .ui-accordion > div > h3.ui-state-active{border-bottom:none !important;}
+.admin-style .ui-accordion-header > .ui-icon{margin:4px;}
+
+/* Tabs */
+.admin-style .ui-tabs{padding:0;border:none;}
+.admin-style .ui-tabs-nav{padding:0px 0px 0px 0px !important;border:none;border-bottom:2px solid;background-color:#ffffff;}
+.admin-style .ui-tabs-nav .ui-state-default{border:none;padding:0px !important;margin-right:2px !important;background:none !important;}
+.admin-style .ui-tabs-nav .ui-state-default a{border:2px solid;position:relative;top:1px;font-weight:bold;}
+.admin-style .ui-tabs-nav .ui-tabs-selected a{border:2px solid;height:1.8em;border-bottom:none !important;}
+.admin-style .ui-tabs .ui-widget-content{border:2px solid !important;border-top:none !important;}
+.admin-style .ui-tabs-nav .ui-state-hover{border:none;}
+
+
+/* Dialog */
+.admin-style .ui-dialog{border:none; padding:0;}
+.admin-style .ui-dialog-buttonpane{border-top-width:2px !important;margin-top:0 !important;}
+
+/* Datepicker*/
+.admin-style .ui-datepicker {border:none;padding:0 !important; font-size:12px;}
+.admin-style .ui-datepicker .ui-datepicker-header{border:none;padding:.4em 1em .4em 1em;}
+.admin-style .ui-datepicker .ui-datepicker-header .ui-state-default, .admin-style .ui-datepicker .ui-datepicker-header .ui-state-hover{background:none;border:none;padding:0;}
+.admin-style .ui-datepicker .ui-datepicker-prev, .admin-style .ui-datepicker .ui-datepicker-next{width:24px;height:24px;margin:0;}
+.admin-style .ui-datepicker .ui-datepicker-prev span, .admin-style .ui-datepicker .ui-datepicker-next span{position:relative;top:0;left:0;margin:0;}
+.admin-style .ui-datepicker .ui-datepicker-prev-hover { left:2px;top:2px; }
+.admin-style .ui-datepicker .ui-datepicker-next-hover { right:2px;top:2px; }
+.admin-style .ui-datepicker table {margin:0px;border:1px solid; }
+.admin-style .ui-datepicker-calendar .ui-state-default, .admin-style .ui-datepicker-calendar .ui-state-hover, .admin-style .ui-datepicker-calendar .ui-state-highlight, .admin-style .ui-datepicker-calendar .ui-state-active{border-width:2px;}
+.admin-style .ui-datepicker .ui-icon{margin:4px !important;}
+
+/* Button */
+.admin-style .ui-button{border-width:2px !important;border-bottom-style:solid;font-weight:bold !important;}
+
+.admin-style .ui-buttonset .ui-button { margin-left: 0; margin-right: -1px; }
+
+/* Additional states */
+.admin-style .ui-state-highlight{border:2px solid;}
+.admin-style .ui-state-error{border:2px solid;}
+/*.ui-state-highlight .ui-icon, .admin-style .ui-state-error .ui-icon{position:relative;top:-4px;}*/
+
+/* Slider */
+.admin-style .ui-slider{border:none;}
+.admin-style .ui-slider .ui-slider-handle{width:.8em;height:.8em;border:none;margin:-.4em;}
+.admin-style .ui-slider-horizontal .ui-slider-handle{margin-top:0; top:0;}
+.admin-style .ui-slider-vertical .ui-slider-handle{margin-left:0;left:0;}
+
+/* Progressbar */
+.admin-style .ui-progressbar{border:none;height:0.8em;}
+.admin-style .ui-progressbar .ui-progressbar-value{border:none;}
+
+/* Autocomplete */
+.admin-style .ui-autocomplete {border:solid 1px #e2e2e2; padding:0; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09); min-width:270px;}
+.admin-style .ui-autocomplete .ui-menu-item a {padding:5px;border:none;margin:0 !important;}
+.admin-style .ui-autocomplete.searchCityItems {overflow-y:auto;max-height:400px;}
+
+/* Icon states */
+.admin-style .ui-icon { width: 16px; height: 16px; }
+/* General */
+.admin-style .ui-icon, .admin-style .ui-widget-content .ui-icon, .admin-style .ui-widget-header .ui-icon  {background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_d4d4d4_0.png)}
+.admin-style .ui-state-default .ui-icon {background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_525252_0.png)}
+.admin-style .ui-state-active .ui-icon, .admin-style .ui-state-hover .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);}
+.admin-style .ui-widget-content{color:#525252;}
+
+/* Button states */
+.admin-style .ui-state-default, .admin-style .ui-widget-content .ui-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+.admin-style .ui-state-focus, .admin-style .ui-widget-content .ui-state-focus{background-color:#bdbdbd;border-color:#bdbdbd;color:#ffffff;}
+.admin-style .ui-state-hover, .admin-style .ui-widget-content .ui-state-hover{background-color:#bdbdbd;border-color:#bdbdbd;color:#ffffff;}
+.admin-style .ui-state-active, .admin-style .ui-widget-content .ui-state-active{background-color:#000000;border-color:#000000;color:#ffffff;}
+
+
+/* Accordion */
+.admin-style .ui-accordion-content{border-color:#d4d4d4;background:#ffffff}
+.admin-style .ui-accordion-header.ui-state-active, .admin-style .ui-accordion-header.ui-state-active.ui-state-hover{background-color:#ffffff !important;color:#525252;border-color:#d4d4d4 !important;background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_d4d4d4_0.png) !important;background-position: -230px -213px !important;}
+.admin-style .ui-accordion-header.ui-state-active a{ color: #525252 !important;}
+.admin-style .ui-accordion-header.ui-state-default{border-color:#3AABD1;background:#3AABD1;}
+.admin-style .ui-accordion-header.ui-state-default a{ color: #ffffff;}
+.admin-style .ui-accordion-header.ui-state-hover{background:#2988a8;border-color:#2988a8;}
+.admin-style .ui-accordion-header.ui-state-hover a{color:#ffffff;}
+.admin-style .ui-accordion-header.ui-state-active .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_d4d4d4_0.png) !important;}
+.admin-style .ui-accordion-header.ui-state-default .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);}
+.admin-style .ui-accordion-header.ui-state-hover .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_2988a8_0.png);}
+.admin-style .ui-accordion-header{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png) !important;background-position: -230px -214px !important;background-repeat:no-repeat !important;}
+.admin-style .ui-accordion-header.ui-state-hover{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png) !important;background-position: -230px -166px !important;}
+
+
+
+/* Tabs states */
+.admin-style .ui-tabs-nav > .ui-state-default a{border-color:#3AABD1;background:#3AABD1;color:#ffffff;}
+.admin-style .ui-tabs-nav > .ui-tabs-selected a{border-color:#d4d4d4 !important;background:#ffffff !important;color:#525252 !important;}
+.admin-style .ui-tabs-nav > .ui-state-hover a{background:#2988a8;border-color:#2988a8;color:#ffffff;}
+.admin-style .ui-tabs-nav > .ui-state-focus a{background:#2988a8;border-color:;color:#ffffff;}
+.admin-style .ui-tabs .ui-widget-content{border-color:#d4d4d4 !important;background-color:#ffffff;}
+.admin-style .ui-tabs-nav{border-color:#d4d4d4;}
+
+/* Dialog states */
+.admin-style .ui-dialog{border-color:#3AABD1;background-color:#ffffff !important;}
+.admin-style .ui-dialog-buttonpane{border-color:#3AABD1 !important;background-color:#ffffff;}
+.admin-style .ui-dialog-content{background-color:#ffffff !important;}
+
+
+/* Slider */
+.admin-style .ui-slider{background:#d4d4d4;}
+.admin-style .ui-slider .ui-slider-range{background:#3AABD1;}
+.admin-style .ui-slider .ui-state-default{background-color:#000000;}
+.admin-style .ui-slider .ui-state-active{background-color:#525252 !important;}
+.admin-style .ui-slider .ui-state-focus{background-color:#000000;}
+.admin-style .ui-slider .ui-state-hover{background-color:#525252;}
+
+/* Progressbar */
+.admin-style .ui-progressbar{background:#d4d4d4;}
+.admin-style .ui-progressbar .ui-progressbar-value{background-color:#3AABD1;}
+
+/* Autocomplete */
+
+.admin-style .ui-autocomplete a {background-color:#ffffff;color:#525252;}
+.admin-style .ui-autocomplete .ui-state-hover a,.ui-autocomplete .ui-state-focus a {background:#fed42b; color:#000;}
+
+/* Datepicker */
+.admin-style .ui-datepicker {border-color:white;}
+.admin-style .ui-datepicker .ui-datepicker-header{background-color:#3AABD1;color:#ffffff;}
+.admin-style .ui-datepicker table {border-color:#ffffff; }
+.admin-style .ui-datepicker-calendar{background:#ffffff;}
+.admin-style .ui-datepicker-calendar .ui-state-default{background-color:#d4d4d4;border-color:#d4d4d4;color:#525252;}
+.admin-style .ui-datepicker-calendar .ui-state-hover{background-color:#000000 !important;border-color:#000000 !important;color:#ffffff !important;}
+.admin-style .ui-datepicker-calendar .ui-state-highlight{background-color:#d4d4d4;border-color:#3AABD1;color:#ffffff;}
+.admin-style .ui-datepicker-calendar .ui-state-active{background-color:#3AABD1;border-color:#3AABD1;color:#ffffff;}
+.admin-style .ui-datepicker .ui-icon {background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);}
+
+.admin-style .ui-datepicker .ui-state-hover .ui-icon {background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_3AABD1_0.png)}
+.admin-style .ui-datepicker-next, .admin-style .ui-datepicker-prev{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);background-position: -232px -216px;}
+.admin-style .ui-datepicker-next-hover, .admin-style .ui-datepicker-prev-hover{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png) !important;background-position: -232px -168px !important;opacity:1;}
+.admin-style .ui-datepicker-next.ui-state-disabled, .admin-style .ui-datepicker-prev.ui-state-disabled{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);background-position: -232px -216px;}
+
+
+
+/* Highlight */
+.admin-style .ui-state-highlight{border-color:#efdca9;color:#525252;background:#efdca9;}
+.admin-style .ui-state-highlight .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_525252_0.png);}
+
+/* Error */
+.admin-style .ui-state-error{border-color:#c31d1d;color:#ffffff;background:#c31d1d;}
+.admin-style .ui-state-error .ui-icon{background-image:url(/resource/css/flatadmin/readyscript.ui/images/ui-icons_ffffff_0.png);}
+
+
+.admin-style .ui-datepicker .ui-timepicker-div {
+    padding:8px 7px 0;
+}
+
+.admin-style .ui-datepicker .ui-timepicker-div dd {
+    margin-bottom:10px;
+}

@@ -1,0 +1,1 @@
+{$cell->getValue()}{if $cell->getRow('discount_type') == '%'}%{/if}

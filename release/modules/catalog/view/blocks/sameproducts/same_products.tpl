@@ -1,0 +1,1 @@
+{include file="%catalog%/blocks/recommended/recommended.tpl" recommended=$sameproducts title="{t}Похожие товары{/t}"}

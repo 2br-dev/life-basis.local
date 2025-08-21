@@ -1,0 +1,59 @@
+Идентификатор в системе 1C;Название категории;Псевдоним;Публичный;Порядк. N;Это спец. список?;Вес товара по умолчанию, грамм;Заголовок;Ключевые слова;Описание;Описание категории;Изображение;Родитель;Показывать как ярлык у товаров;Характеристики списка;Основной цвет фона категории;Вторичный цвет фона категории;Цвет названия категории;Иконка
+;Лидеры продаж;top;0;46;Y;0;;;;;/modules/catalog/config/demo/images/leaders.jpg;;0;;#ededed;#dbdbdb;#575757;
+;Новинки;new;0;48;Y;0;;;;;;;1;;#ededed;#dbdbdb;#575757;
+;Электроника;elektronika;1;20;N;0;;;;;;;0;;#f790a3;#db7688;#ffffff;/modules/catalog/config/demo/images/electronic.png
+;Ноутбуки;noutbuki;1;45;N;0;;;;;/modules/catalog/config/demo/images/jwioah0kxos91p3.jpg;Электроника;0;;#ededed;#dbdbdb;#575757;
+;Acer;acer;1;688;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Asus;asus;1;705;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Fujitsu;fujitsu;1;738;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;HP;hp;1;741;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Lenovo;lenovo;1;752;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;MSI;msi;1;757;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Packard Bell;packard-bell;1;765;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Panasonic;panasonic;1;769;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Samsung;samsung;1;775;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Sony;sony;1;787;N;0;;;;;;Электроника/Ноутбуки;0;;#ededed;#dbdbdb;#575757;
+;Планшеты;planshety;1;44;N;0;;;;;/modules/catalog/config/demo/images/0hkhvd15ak1bxfa.jpg;Электроника;0;;#ededed;#dbdbdb;#575757;
+;ViewSonic;ViewSonicPad;1;879;N;0;;;;;;Электроника/Планшеты;0;;#ededed;#dbdbdb;#575757;
+;Archos;archos;1;816;N;0;;;;;;Электроника/Планшеты;0;;#ededed;#dbdbdb;#575757;
+;Проекторы;proektory;1;653;N;0;;;;;/modules/catalog/config/demo/images/0yaq84flre6q4h1.jpg;Электроника;0;;#ededed;#dbdbdb;#575757;
+;Canon;canon;1;843;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Демо-продукты;demo-produkty;1;18;N;0;;;;<p>В данной категории находятся товары, ярко демонстрирующие различные возможности системы. Переключитесь к табличному виду представления товаров, чтобы прочитать краткие описания к товарам.</p>;/modules/catalog/config/demo/images/05rnp9f00mikv5k.jpg;;0;"(Физические характеристики)Форм-фактор;
+(Процессор)Процессор;
+(Процессор)Код процессора;
+(Процессор)Количество ядер;
+(Оперативная память)Объем;
+(Оперативная память)Тип памяти";#ededed;#dbdbdb;#575757;
+;Nec;nec;1;836;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Optoma;optoma;1;837;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Panasonic;panasonic-1;1;838;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Creative;creative;1;826;N;0;;;;;;Электроника/Планшеты;0;;#ededed;#dbdbdb;#575757;
+;Sanyo;sanyo;1;840;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Digma;digma;1;828;N;0;;;;;;Электроника/Планшеты;0;;#ededed;#dbdbdb;#575757;
+;ViewSonic;viewsonic;1;842;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Sony;sony-1;1;841;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;HTC;htc;1;831;N;0;;;;;;Электроника/Планшеты;0;;#ededed;#dbdbdb;#575757;
+;Samsung;samsung-1;1;839;N;0;;;;;;Электроника/Проекторы;0;;#ededed;#dbdbdb;#575757;
+;Смартфоны;smartfony;1;681;N;0;;;;;/modules/catalog/config/demo/images/j5zdi863k0q9q1n.jpg;Электроника;0;;#ededed;#dbdbdb;#575757;
+;Телефоны;telefony;1;654;N;0;;;;;/modules/catalog/config/demo/images/2a2n060a0rbmd5k.jpg;Электроника;0;;#ededed;#dbdbdb;#575757;
+;Alcatel;alcatel;1;868;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Fly;fly;1;869;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;LG;lg;1;870;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Nokia;nokia;1;872;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Philips;philips;1;873;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Samsung;samsung-2;1;874;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Sitronics;sitronics;1;875;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Sony Ericsson;sony-ericsson;1;876;N;0;;;;;;Электроника/Телефоны;0;;#ededed;#dbdbdb;#575757;
+;Популярные;popular;0;47;Y;0;;;;;;;0;;#ededed;#dbdbdb;#575757;
+;Одежда, обувь;odezhda-obuv;1;22;N;0;;;;;;;0;;#f6d681;#febd01;#ffffff;/modules/catalog/config/demo/images/clothes.png
+;Детские товары;detskie-tovary;1;41;N;0;;;;;/modules/catalog/config/demo/images/2vbnfzys33fp9d6.png;;0;;#7fd9e9;#00b3d2;#ffffff;/modules/catalog/config/demo/images/toys.png
+;Спорт товары;sport-tovary;1;42;N;0;;;;;/modules/catalog/config/demo/images/2wo8ok7eyi2102r.jpg;;0;;#f790a3;#db7688;#ffffff;/modules/catalog/config/demo/images/sport.png
+;Подарки;podarki;1;43;N;0;;;;;/modules/catalog/config/demo/images/o25zwd5drn3yrob.jpg;;0;;#7fd9e9;#00b3d2;#ffffff;/modules/catalog/config/demo/images/gift.png
+;Самые продаваемые вещи;samye-prodavaemye-veshchi;0;49;Y;0;;;;;;;0;;#ededed;#dbdbdb;#575757;
+;Популярные вещи;populyarnye-veshchi;0;51;Y;0;;;;;;;1;;#ededed;#dbdbdb;#575757;
+;Новые поступления;novye-postupleniya;0;52;Y;0;;;;;;;1;;#ededed;#dbdbdb;#575757;
+;Акции;akcii;0;846;Y;0;;;;;/modules/catalog/config/demo/images/action.jpg;;0;;#ededed;#dbdbdb;#575757;
+;Самые продаваемые игрушки;samye-prodavaemye-igrushki;0;53;Y;0;;;;;;;0;;#ededed;#dbdbdb;#575757;
+;Товар дня;tovar-dnya;0;867;Y;0;;;;;;;0;;#ededed;#dbdbdb;#575757;
+;Лучшая цена;luchshaya-cena;0;878;Y;0;;;;;;;1;;#ededed;#dbdbdb;#575757;
+;Актуальные товары разных брендов;actual;0;53;Y;0;;;;;;;0;;#ededed;#dbdbdb;#575757;

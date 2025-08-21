@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Каталог товаров</name>
+        <description multilanguage="true">Администрирование каталога товаров по рубрикам</description>        
+        <version>6.0.168</version>
+        <author>ReadyScript lab.</author>
+    </defaultValues>
+</config>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Каталог товаров</name>
+        <description multilanguage="true">Администрирование каталога товаров по рубрикам</description>        
+        <version>6.0.168</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        <dependfrom>photo</dependfrom>
+
+        <old_cost>0</old_cost>
+        <list_page_size>12</list_page_size>
+        <list_default_order>sortn</list_default_order>
+        <list_default_order_direction>asc</list_default_order_direction>
+        <hide_unobtainable_goods>N</hide_unobtainable_goods>
+        <default_weight>0</default_weight>
+        <default_product_length>0</default_product_length>
+        <default_product_width>0</default_product_width>
+        <default_product_height>0</default_product_height>
+        <weight_unit>g</weight_unit>
+        <disable_search_index>0</disable_search_index>
+        <concat_dir_meta>1</concat_dir_meta>
+        <auto_barcode>a{n|6}</auto_barcode>
+        <buyinoneclick>1</buyinoneclick>
+        <update_price_round>0</update_price_round>
+        <update_price_round_value>0</update_price_round_value>
+        <brand_products_specdir>0</brand_products_specdir>
+        <brand_products_cnt>8</brand_products_cnt>
+        <brand_sort>sortn asc</brand_sort>
+        <use_offer_unit>0</use_offer_unit>
+        <import_photos_timeout>20</import_photos_timeout>
+        <use_seo_filters>1</use_seo_filters>
+        <import_yml_timeout>20</import_yml_timeout>
+        <yml_product_group_identifier>group_id</yml_product_group_identifier>
+        <show_all_products>0</show_all_products>
+        <list_default_view_as>blocks</list_default_view_as>
+        <warehouse_sticks>1,5,15,25,50</warehouse_sticks>
+        <oneclick_name_required>1</oneclick_name_required>
+        <dont_buy_when_null>0</dont_buy_when_null>
+        <csv_dont_delete_stocks>1</csv_dont_delete_stocks>
+        <csv_offer_product_search_field>title</csv_offer_product_search_field>
+        <csv_offer_search_field>sortn</csv_offer_search_field>
+        <csv_file_upload_type>0</csv_file_upload_type>
+        <csv_file_upload_access>hidden</csv_file_upload_access>
+        <price_like_slider>1</price_like_slider>
+        <not_public_product_404>1</not_public_product_404>
+        <not_public_category_404>0</not_public_category_404>
+        <yuml_import_setting>0</yuml_import_setting>
+        <save_product_dir>1</save_product_dir>
+        <save_product_public>1</save_product_public>
+        <not_public_property_dir_404>1</not_public_property_dir_404>
+        <inventory_control_enable>0</inventory_control_enable>
+        <dependent_filters>0</dependent_filters>
+        <cbr_auto_update_interval>1439</cbr_auto_update_interval>
+        <tabs_on_new_page type="array"/>
+        <show_filters_old_logic>0</show_filters_old_logic>
+        <csv_id_fields type="array">
+            <value>title</value>
+            <value>barcode</value>
+        </csv_id_fields>
+        <search_fields type="array">
+            <value>properties</value>
+            <value>barcode</value>
+            <value>brand</value>
+            <value>short_description</value>
+            <value>meta_keywords</value>
+        </search_fields>
+        <search_barcode_like>0</search_barcode_like>
+        <dimensions_unit>sm</dimensions_unit>
+        <discount_combination>max</discount_combination>
+        <product_max_discount>100</product_max_discount>
+        <zero_cost_sale_status>no_cost</zero_cost_sale_status>
+        <microdata_product_list_active>0</microdata_product_list_active>
+    </defaultValues>
+</config>

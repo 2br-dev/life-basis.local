@@ -1,0 +1,2 @@
+<input type="hidden" name="mobile_product_id" value="{$elem.mobile_product_id}"/>
+<a class="button save selectProduct" data-name="mobile_product_id">{$elem->getMobileProductTitle()|default:"{t}Выберите товар{/t}"}</a>

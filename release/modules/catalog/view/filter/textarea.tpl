@@ -1,0 +1,1 @@
+<textarea name="{$fitem->getName()}" value="{$fitem->getValue()}" {$fitem->getAttrString()}>{$fitem->getValue()}</textarea>

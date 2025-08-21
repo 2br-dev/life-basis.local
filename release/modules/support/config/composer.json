@@ -1,0 +1,8 @@
+{
+    "require": {
+        "php-imap/php-imap": "^5.0"
+    },
+	"config": {
+		"vendor-dir": "../vendor"
+	}
+}

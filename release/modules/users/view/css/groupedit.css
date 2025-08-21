@@ -1,0 +1,187 @@
+.admin-style .switch-site-access {
+    padding:10px 0;
+    border-bottom:2px solid #777;
+}
+
+.admin-style .switch-site-access label {
+    display:inline;
+}
+
+.admin-style .moduleWrapper .rs-table td{
+    font-size:14px;
+}
+
+.admin-style .treeblock {
+    display:flex;
+    justify-content: space-between;
+}
+
+.admin-style .treeblock .treebody {
+    overflow:auto;
+    height:400px;    
+}
+
+.admin-style .treeblock > div  {
+    width:49%;
+}
+
+.admin-style .full-access {
+    background: #f2f2f2;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.admin-style .full-access input[type="checkbox"] {
+    margin:0 5px 0 9px;
+}
+
+.admin-style .full-access label {
+    margin:0;
+}
+
+@media(max-width:767px) {
+    .admin-style .treeblock {
+        display:block;
+    }
+
+    .admin-style .treeblock > div {
+        width:100%;
+        margin-bottom:20px;
+    }
+}
+
+.admin-style .modrights-search {
+    margin-bottom:16px;
+    padding:16px;
+    background:#f2f2f2;
+    border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.admin-style .modrights-search .inputs {
+    display:flex;
+    gap:16px;
+}
+
+.admin-style .modrights-search input[type="text"] {
+    width:300px;
+    max-width:100%;
+}
+
+@media (max-width:767px) {
+    .admin-style .modrights-search .inputs {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .admin-style .modrights-search input[type="text"] {
+        width:100%;
+    }
+}
+
+.admin-style .modrights-head {
+    display:flex;
+    justify-content: space-between;
+    font-size:12px;
+    padding-bottom:8px;
+    border-bottom:2px solid #eee;
+    position: sticky;
+    top: 62px;
+    background: white;
+    padding-top: 16px;
+    z-index: 2;
+}
+
+.admin-style .modrights .column-rights {
+    display:flex;
+    gap:16px;
+}
+
+.admin-style .modrights .item-head {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-style .modrights .icon-item {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:24px;
+    margin-right:6px;
+    min-width:30px;
+}
+
+.admin-style .modrights .item-head .handler {
+    transform:rotate(180deg);
+    transform-origin: center center;
+}
+
+.admin-style .modrights .item-head .handler.collapsed {
+    transform:rotate(0deg);
+    display:flex;
+    border:none;
+    padding:0;
+}
+
+.admin-style .modrights .column-module {
+    display:flex;
+    align-items:center;
+}
+
+.admin-style .modrights .item-head {
+    border-bottom:1px solid #eee;
+    padding:8px 0;
+}
+
+.admin-style .modrights .item-head .handler {
+    padding:0;
+}
+
+.admin-style .modrights .item-head .column-module .title {
+    margin-bottom:4px;
+    font-weight:bold;
+}
+
+.admin-style .modrights .column-module .class {
+    font-size:12px;
+    color:#ababab;
+}
+
+.admin-style .modrights .access-item {
+    width:85px;
+    text-align:center;
+    white-space: nowrap;
+}
+
+.admin-style .modrights .item-right {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+.admin-style .modrights .item-rights > .item-right-group:last-child {
+    border-bottom: 2px solid #ddd;
+}
+
+.admin-style .modrights .item-head:hover,
+.admin-style .modrights .item-right:hover {
+    background: #fffeeb;
+}
+
+@media (max-width: 767px) {
+    .admin-style .modrights .access-item {
+        width:20px;
+    }
+}
+
+.admin-style .modrights .access-group-hl {
+    background:#fffbf0;
+    font-weight:bold;
+    z-index: 1;
+}

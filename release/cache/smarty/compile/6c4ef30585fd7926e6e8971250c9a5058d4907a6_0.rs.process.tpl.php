@@ -1,0 +1,105 @@
+<?php
+/* Smarty version 4.3.1, created on 2025-08-19 12:06:06
+  from 'D:\Projects\Hosts\life-basis.local\release\templates\life-basis\sections\about\process.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.1',
+  'unifunc' => 'content_68a43e7e2efef0_06126448',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '6c4ef30585fd7926e6e8971250c9a5058d4907a6' => 
+    array (
+      0 => 'D:\\Projects\\Hosts\\life-basis.local\\release\\templates\\life-basis\\sections\\about\\process.tpl',
+      1 => 1755594363,
+      2 => 'rs',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_68a43e7e2efef0_06126448 (Smarty_Internal_Template $_smarty_tpl) {
+?><section id="process">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h2>Описание технологического процесса розлива минеральное воды</h2>
+			</div>
+			<div class="col l8 m10 s12">
+				<div class="number-points-wrapper">
+					<div class="number-point">
+						<div class="number-point__header">
+							<div class="number-point__header-num">1</div>
+							<div class="number-point__header-title">Удаление излишнего количества железа и взвешенных частиц</div>
+						</div>
+						<div class="number-point__content fogged">
+							<p>
+								Минеральная вода поступает из скважины по закрытому трубопроводу, проходит через устройство 
+								насыщения кислородом и попадает в песочный фильтр механической очистки (фракция 0.6-1.2 мм), 
+								после насыщения кислородом происходит преобразование двухвалентного соединения железа 
+								в трехвалентное, что способствует оседанию его в слоях песка механического фильтра (Fe 2+ -- Fe 3+). 
+								Присутсвие растворенного железа (двухвалентного) характерно для всех подземных источников, 
+								поэтому данная процедура желательна для технологического процесса розлива питьевых и минеральных вод, 
+								еще один плюс от процесса аэрации – насыщение продукта кислородом, что значительно улучшает 
+								органолептические (вкусовые) показатели воды.
+							</p>
+						</div>
+					</div>
+					<div class="number-point">
+						<div class="number-point__header">
+							<div class="number-point__header-num">2</div>
+							<div class="number-point__header-title">Тонкая очистка при помощи установки ультрафильтрации</div>
+						</div>
+						<div class="number-point__content fogged">
+							<p>
+								Очистка продукта до «кристально чистого» состояния при помощи керамических мембран в системе 
+								так называемой ультрафильтрации (сверхтонкая очистка) до 0.01 мкн, которая не нарушает 
+								баланс химических полезных элементов и не влияет на физиологическую полноценность минеральной воды.
+							</p>
+						</div>
+					</div>
+					<div class="number-point">
+						<div class="number-point__header">
+							<div class="number-point__header-num">3</div>
+							<div class="number-point__header-title">Обеспечение эпидемиологической и бактериологической безопасности</div>
+						</div>
+						<div class="number-point__content fogged">
+							<p>
+								Очищенная вода проходит «мягкую» обработку системой принудительного озонирования (концентрация 
+								озона до 0.1 мг/л), которая уничтожает до 99.97% всех видов вирусов и болезнетворных бактерий. 
+								После этого идет обработка ультрафиолетовыми излучателями для закрепления результата обеззараживания 
+								и удаления излишнего озона в воде.
+							</p>
+						</div>
+					</div>
+					<div class="number-point">
+						<div class="number-point__header">
+							<div class="number-point__header-num">4</div>
+							<div class="number-point__header-title">Розлив и упаковка в ёмкости 19л</div>
+						</div>
+						<div class="number-point__content fogged">
+							<p>
+								Розлив и упаковка продукции происходит в подготовленную (очищенную от посторонних предметов 
+								и элементов транспортной упаковки) 19л бутыли на автоматической линии. Бутыли проходят четыре 
+								степени мойки внутренних и наружных поверхностей:
+							</p>
+							<ol>
+								<li>Мойка бутылей пенным раствором для удаления белковых загрязнений в автоматической мойке</li>
+								<li>Повторная мойка пенным раствором в машине розлива</li>
+								<li>Ополаскивание озонированной водой</li>
+								<li>Мойка наружных и внутренних поверхностей дезинфицирующим раствором на основе надуксусной кислоты</li>
+								<li>Ополаскивание озонированной водой</li>
+								<li>Повторная мойка дезинфицирующим раствором с активным кислородом</li>
+								<li>Ополаскивание непосредственно продуктом</li>
+								<li>Наполнение продуктом и укупоривание герметичной крышкой и ТУ колпачком</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><?php }
+}

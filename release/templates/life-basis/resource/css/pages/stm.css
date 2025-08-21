@@ -1,0 +1,9 @@
+#support .img-pair {
+    align-items: center;
+}
+
+@media (max-width: 1100px) {
+    #support .img-pair {
+        align-items: flex-start;
+    }
+}

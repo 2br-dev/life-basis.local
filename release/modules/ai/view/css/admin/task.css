@@ -1,0 +1,154 @@
+.admin-style .ai-panel-head .panel-heading {
+    background:none;
+    border:none;
+}
+
+.admin-style .ai-panel .toggle-button,
+.admin-style .ai-panel-head .toggle-all-button {
+    line-height:normal;
+    font-size:20px;
+    padding:0;
+    border:none;
+}
+
+.admin-style .ai-panel-head .toggle-all-button,
+.admin-style .ai-panel .toggle-button.collapsed {
+    color:gray;
+}
+
+.admin-style .ai-panel .toggle-button.collapsed:hover {
+    color:inherit;
+}
+
+.admin-style .ai-panel .panel-heading .toggle-button > * {
+    vertical-align: middle;
+}
+
+.admin-style .table-bordered-hor tr {
+    border-bottom:1px solid #eee;
+}
+
+.admin-style .table-bordered-hor tr:last-child {
+    border-bottom:none;
+}
+
+.admin-style .task-state-table {
+    width:100%;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    text-align:center;
+
+    justify-items: center;
+    align-items: center;
+    border:1px solid #eee;
+    padding:12px;
+}
+
+.admin-style .task-state-table .head {
+    font-weight:bold;
+}
+
+@media (max-width:767px) {
+    .admin-style .task-state-table {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto;
+        grid-auto-flow: row;
+        text-align:left;
+        justify-items: start;
+    }
+}
+
+.admin-style .task-buttons {
+    display:flex;
+    gap:16px;
+    width:100%;
+    margin-top:16px;
+}
+
+.admin-style .task-buttons .task-button {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    gap:16px;
+    padding:20px;
+    border:1px solid #ddd;
+    color:black;
+    font-size:16px;
+    border-radius:5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width:767px) {
+    .admin-style .task-buttons {
+        flex-direction: column;
+        gap:8px;
+    }
+}
+
+.admin-style .task-buttons .task-button:hover {
+    background-color:#e5e5e5;
+}
+
+.admin-style .task-buttons .task-button.list {
+
+}
+
+.admin-style .task-buttons .task-button.next {
+    background: #48b048;
+    color:white;
+}
+
+.admin-style .task-buttons .task-button.next:hover {
+    background-color: #209120;
+}
+
+.admin-style .task-buttons .task-button.cancel {
+    border-color: #ff4949;
+    color:red;
+    justify-content: center;
+    flex:0.4;
+}
+
+.admin-style .task-buttons .task-button.cancel:hover {
+    background-color: #f5c2c2;
+}
+
+.admin-style .task-fields {
+    margin-top:24px;
+}
+
+.admin-style .task-fields .task-field {
+    border:1px solid #eee;
+    border-radius:5px;
+    margin-bottom:16px;
+    padding:12px;
+}
+
+.admin-style .task-fields .task-field-main {
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.admin-style .task-fields .task-field-params {
+    margin-top:12px;
+    border-top:1px solid #eee;
+    padding-top:12px;
+}
+
+.admin-style .task-collapse-chevron {
+    font-size:20px;
+    transform:rotate(180deg);
+}
+
+.admin-style .collapsed .task-collapse-chevron {
+    transform:rotate(0);
+}
+
+.admin-style .task-field-main.collapsed {
+    line-height:20px;
+}

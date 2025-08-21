@@ -1,0 +1,2 @@
+<p>{t operation=$data.operation domain=$data.domain code=$data.code}Код для %operation на сайте %domain - %code{/t}</p>
+<p>{t domain=$data.domain}Если вы не выполняли данную операцию на сайте %domain, проигнорируйте данное письмо. Никому не сообщайте код.{/t}</p>

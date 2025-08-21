@@ -1,0 +1,168 @@
+.admin-style .crm-status-columns {
+    display:flex;
+    justify-content: space-between;
+    margin:0 -15px;
+    min-width:950px;
+}
+
+.admin-style .crm-status-column {
+    flex:1;
+    margin:0 15px;
+    background: #f5f5f5;
+    min-height:70vh;
+    min-width:150px;
+    display:flex;
+    flex-direction: column;
+}
+
+.admin-style .crm-status-column .crm-status-head {
+    border-bottom:2px solid #eee;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:16px;
+    background:white;
+    margin-bottom:1px;
+}
+
+.admin-style .crm-status-column .crm-status-head .crm-column-title {
+    /*border-bottom:2px solid #eee;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:16px;
+    background:white;
+    margin-bottom:1px;*/
+}
+.admin-style .crm-status-column .crm-status-head .crm-status-head__button-read-all {
+    border: none;
+    background: transparent;
+}
+
+.admin-style .viewport.crm-filter-line {
+    margin-bottom:20px;
+}
+
+.admin-style .crm-filter-line .dropdown {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.admin-style .crm-column-items {
+    height:100%;
+}
+
+.admin-style .crm-column-item {
+    border:1px solid #cfcfcf;
+    padding:10px 5px;
+    margin-top:-1px;
+    background:white;
+    position:relative;
+}
+
+.admin-style .crm-column-item .view-element {
+    background: #bfbfbf;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: 14px;
+    opacity: .7;
+}
+.admin-style .crm-column-item .view-element.is-new {
+    background: #f96a6a;
+}
+
+.admin-style .crm-column-item:hover {
+    background:#fed32c;
+    color:black;
+    cursor:move;
+}
+
+.admin-style .crm-one-more {
+    text-align:center;
+    padding:20px 10px;
+    display:block;
+    background: #e9e9e9;
+    color:#666;
+}
+
+.admin-style .crm-one-more:hover {
+    background-color:#ddd;
+}
+
+.admin-style .crm-column-items .sortable-placeholder {
+    border:1px dashed #3aabd1;
+    background: #b4d9e4;
+    padding:10px 5px;
+    margin-top:-1px;
+}
+
+.admin-style .crm-column-item-title {
+    margin-bottom:5px;
+}
+
+.admin-style .crm-filter-line {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 490px) {
+    .admin-style .crm-filter-line {
+        flex-flow: column;
+        align-items: start;
+    }
+    .admin-style .search-line {
+        margin-top: 12px;
+    }
+}
+.admin-style .search-line {
+    display: flex;
+    position: relative;
+}
+.admin-style .search-line .search-line__field {
+    padding-right: 54px;
+    border-radius: 12px;
+}
+.admin-style .search-line .search-line__button-search {
+    top: 51%;
+    transform: translateY(-50%);
+    right: 3px;
+    border: none;
+    min-width: 29px;
+    height: 29px;
+    position: absolute;
+    border-radius: 12px;
+}
+.admin-style .search-line .search-line__button-clear {
+    top: 50%;
+    transform: translateY(-50%);
+    right:29px;
+    border: none;
+    min-width: 29px;
+    height: 29px;
+    position: absolute;
+    border-radius: 12px;
+    background: transparent;
+}
+.admin-style .crm-column-item .board__checklist-progress {
+    display: flex;
+    align-items: center;
+}
+
+.admin-style .crm-column-item .board__progress-label {
+    font-size: 13px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.admin-style .crm-column-item .board__progress-bar-background {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.admin-style .crm-column-item .board__progress-bar-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}

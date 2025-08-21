@@ -1,0 +1,1 @@
+{include file=$field->getOriginalTemplate()}&nbsp; <a href="https://ionic.io/ionicons" target="_blank">{t}Перейти к списку картинок{/t}</a>

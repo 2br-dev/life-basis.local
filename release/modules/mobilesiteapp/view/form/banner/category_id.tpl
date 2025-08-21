@@ -1,0 +1,2 @@
+<input type="hidden" name="mobile_category_id" value="{$elem.mobile_category_id}"/>
+<a class="button save selectGroup" data-name="mobile_category_id">{$elem->getMobileCategoryTitle()|default:"{t}Выберите категорию{/t}"}</a>

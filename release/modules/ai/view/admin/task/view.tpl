@@ -1,0 +1,69 @@
+{addcss file="%ai%/admin/task.css"}
+{addjs file="%ai%/admin/jquery.task-view.js"}
+
+<div class="updatable" data-dialog-options='{ "width":"900", "height":"700"}'
+     data-no-update-hash="true" data-update-replace="true" data-update-parse="true">
+
+    {if !\RS\Cron\Manager::obj()->isCronWork()}
+        <div class="notice notice-danger m-b-10">
+            {t}Кажется на вашем сайте не выполняются фоновые задачи. Это необходимо для генерации данных. Настройте запуск внутреннего планировщика сайта на вашем сервере.{/t}
+            <a href="{$Setup.RS_SERVER_PROTOCOL}://{$Setup.RS_SERVER_DOMAIN}/manual/cron.html" target="_blank">{t}Подробнее{/t}</a>
+        </div>
+    {/if}
+
+    <div class="notice-box">
+        {t task_url="{adminUrl do=false mod_controller="ai-taskctrl"}"}Вы можете закрыть это окно, задача будет продолжать выполняться в фоновом режиме.
+        В любой момент, вы сможете узнать статус выполнения задачи в разделе <a href="%task_url" class="u-link">Разное -> AI-ассистент -> Задачи на генерацию</a>{/t}
+    </div>
+    <div id="task-auto-updatable" data-update-url="{adminUrl do=view id=$task.id}">
+        <div class="task-state-table">
+            <div class="head">{t}Статус{/t}</div>
+            <div>{$task->getStatusTitle()}</div>
+            <div class="head">{t}Всего объектов{/t}</div>
+            <div>{$task.total_count}</div>
+            <div class="head">{t}Обработано{/t}</div>
+            <div>{$task.generated_count}</div>
+            <div class="head">{t}Принято{/t}</div>
+            <div>{$task.approved_count}</div>
+            <div class="head">{t}Отклонено{/t}</div>
+            <div>{$task.skipped_count}</div>
+        </div>
+
+        <div class="task-buttons">
+            <a data-url="{adminUrl do="view" number=1 task_id=$task.id mod_controller="ai-taskresultctrl"}" class="task-button next crud-edit crud-replace-dialog"><span>Перейти к проверке результатов</span> <i class="zmdi zmdi-arrow-right"></i></a>
+            <a href="{adminUrl do=false mod_controller="ai-taskresultctrl" f=['task_id' => $task.id]}" class="task-button list"><span>Перейти к списку результатов</span><i class="zmdi zmdi-arrow-right"></i></a>
+            {if $task->canCancel()}
+                <a href="{adminUrl do="stopTask" mod_controller="ai-taskctrl" id=$task.id}" class="call-update task-button cancel"><span>Отменить</span></a>
+            {/if}
+        </div>
+    </div>
+
+    <div class="task-settings m-t-30">
+        <h3>{t}Параметры генерации{/t}</h3>
+        <div class="task-fields">
+            {foreach $task->getSelectedFields() as $n => $item}
+                <div class="task-field">
+                    <div class="task-field-main collapsed" data-toggle="collapse" data-target="#task-field-{$n}">
+                        <strong>{$item.field->getTitle()}</strong>
+                        <span class="zmdi zmdi-chevron-down task-collapse-chevron"></span>
+                    </div>
+                    <div class="collapse" id="task-field-{$n}">
+                        <div class="task-field-params">
+                            {foreach $item.form_object->getProperties() as $key => $property}
+                                {if !in_array($key, ['enable'])}
+                                    <div>{$property->getDescription()}:
+                                        {if $property->getCheckboxParam()}
+                                            {if $property->get() == 1}{t}Да{/t}{else}{t}Нет{/t}{/if}
+                                        {else}
+                                            {$property->textView()}
+                                        {/if}
+                                    </div>
+                                {/if}
+                            {/foreach}
+                        </div>
+                    </div>
+                </div>
+            {/foreach}
+        </div>
+    </div>
+</div>

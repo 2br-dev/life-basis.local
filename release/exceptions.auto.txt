@@ -1,0 +1,124 @@
+[2025.08.18 15:23:52] Исключение - "Unable to load template 'rs:D:/Projects/Hosts/life-basis.local/release/templates/life-basis/helper/usertemplate/include/empty_list.tpl' in 'preview_list.tpl'"
+IP:127.0.0.1
+URL:/text-news/
+Код ошибки:0
+Тип ошибки:SmartyException
+Файл:D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php
+Строка:196
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(386): Smarty_Internal_Template->render()
+#1 D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\d3eea73629ef82661ec49107081e9aa2e6bd8976_0.rs.preview_list.tpl.php(84): Smarty_Internal_Template->_subTemplateRender('rs:%THEME%/help...', NULL, NULL, 0, 3600, Array, 0, false)
+#2 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(123): content_68a31b588cbef5_46453528(Object(Smarty_Internal_Template))
+#3 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#5 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#6 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#7 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\result\standard.inc.php(276): Smarty_Internal_TemplateBase->fetch('preview_list.tp...')
+#8 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\result\standard.inc.php(303): RS\Controller\Result\Standard->getHtml()
+#9 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractcontroller.inc.php(188): RS\Controller\Result\Standard->getOutput()
+#10 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractclient.inc.php(82): RS\Controller\AbstractController->processResult(Object(RS\Controller\Result\Standard))
+#11 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractcontroller.inc.php(173): RS\Controller\AbstractClient->processResult(Object(RS\Controller\Result\Standard))
+#12 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractmodule.inc.php(279): RS\Controller\AbstractController->exec(false)
+#13 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\front.inc.php(89): RS\Controller\AbstractModule->exec(false)
+#14 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(433): RS\Controller\Front->exec()
+#15 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(456): RS\Router\Manager->applyRoute(Object(RS\Router\Route))
+#16 D:\Projects\Hosts\life-basis.local\release\index.php(24): RS\Router\Manager->dispatch()
+#17 {main}
+
+[2025.08.18 15:54:33] Исключение - "Syntax error in template "rs:D:\Projects\Hosts\life-basis.local\release\templates\life-basis\moduleview\article\preview_list.tpl"  on line 10 "{$foreach $list as $item}" too many shorthand attributes"
+IP:127.0.0.1
+URL:/text-news/
+Код ошибки:0
+Тип ошибки:SmartyCompilerException
+Файл:D:\Projects\Hosts\life-basis.local\release\templates\life-basis\moduleview\article\preview_list.tpl
+Строка:10
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_compilebase.php(90): Smarty_Internal_TemplateCompilerBase->trigger_template_error('too many shorth...', 10, true)
+#1 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_compile_private_print_expression.php(48): Smarty_Internal_CompileBase->getAttributes(Object(Smarty_Internal_SmartyTemplateCompiler), Array)
+#2 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(749): Smarty_Internal_Compile_Private_Print_Expression->compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#3 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(1486): Smarty_Internal_TemplateCompilerBase->callTagCompiler('private_print_e...', Array, Array)
+#4 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(550): Smarty_Internal_TemplateCompilerBase->compileTag2('private_print_e...', Array, Array)
+#5 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templateparser.php(2130): Smarty_Internal_TemplateCompilerBase->compileTag('private_print_e...', Array, Array)
+#6 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templateparser.php(2777): Smarty_Internal_Templateparser->yy_r16()
+#7 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templateparser.php(2872): Smarty_Internal_Templateparser->yy_reduce(16)
+#8 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse(27, ' as ')
+#9 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(466): Smarty_Internal_SmartyTemplateCompiler->doCompile('<section id="ne...', true)
+#10 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource(Object(Smarty_Internal_Template), false, NULL)
+#11 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#12 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#13 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(105): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#14 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#15 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#16 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#17 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\result\standard.inc.php(276): Smarty_Internal_TemplateBase->fetch('preview_list.tp...')
+#18 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\result\standard.inc.php(303): RS\Controller\Result\Standard->getHtml()
+#19 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractcontroller.inc.php(188): RS\Controller\Result\Standard->getOutput()
+#20 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractclient.inc.php(82): RS\Controller\AbstractController->processResult(Object(RS\Controller\Result\Standard))
+#21 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractcontroller.inc.php(173): RS\Controller\AbstractClient->processResult(Object(RS\Controller\Result\Standard))
+#22 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\abstractmodule.inc.php(279): RS\Controller\AbstractController->exec(false)
+#23 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\front.inc.php(89): RS\Controller\AbstractModule->exec(false)
+#24 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(433): RS\Controller\Front->exec()
+#25 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(456): RS\Router\Manager->applyRoute(Object(RS\Router\Route))
+#26 D:\Projects\Hosts\life-basis.local\release\index.php(24): RS\Router\Manager->dispatch()
+#27 {main}
+
+[2025.08.19 14:55:49] Исключение - "Invalid compiled template for 'theme:life-basis/stm.tpl'"
+IP:127.0.0.1
+URL:/stm/
+Код ошибки:0
+Тип ошибки:SmartyException
+Файл:D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php
+Строка:116
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#1 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#2 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#3 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#4 D:\Projects\Hosts\life-basis.local\release\core\rs\application\block\manager.inc.php(91): Smarty_Internal_TemplateBase->fetch('theme:life-basi...')
+#5 D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\ce2b256be05526ab308b380ff851d8c771980215_0.rs.layout.tpl.php(38): RS\Application\Block\Manager->renderLayout()
+#6 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(123): content_68a318ffd8b272_50496467(Object(Smarty_Internal_Template))
+#7 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#8 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#10 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#11 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\front.inc.php(99): Smarty_Internal_TemplateBase->fetch('%THEME%/layout....')
+#12 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(433): RS\Controller\Front->exec()
+#13 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(456): RS\Router\Manager->applyRoute(Object(RS\Router\Route))
+#14 D:\Projects\Hosts\life-basis.local\release\index.php(24): RS\Router\Manager->dispatch()
+#15 {main}
+
+[2025.08.19 17:33:23] Исключение - "unable to write file D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\a4a961fbcf97585876e66390f9608ec02c34de65_0.rs.header.tpl.php"
+IP:127.0.0.1
+URL:/text-news/
+Код ошибки:0
+Тип ошибки:SmartyException
+Файл:D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_writefile.php
+Строка:84
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(209): Smarty_Internal_Runtime_WriteFile->writeFile('D:\\Projects\\Hos...', '<?php\n/* Smarty...', Object(RS\View\Engine))
+#1 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(184): Smarty_Template_Compiled->write(Object(Smarty_Internal_Template), '<?php\n/* Smarty...')
+#2 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#3 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(105): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#4 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#5 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(386): Smarty_Internal_Template->render()
+#6 D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\eef6f243f3deb06f8c25015bd6c3e6054dee902b_0.rs.default.tpl.php(28): Smarty_Internal_Template->_subTemplateRender('rs:%THEME%/help...', NULL, NULL, 0, 3600, Array, 0, false)
+#7 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(123): content_68a321be4ea9c5_90102471(Object(Smarty_Internal_Template))
+#8 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#9 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#10 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(386): Smarty_Internal_Template->render()
+#11 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_runtime_inheritance.php(116): Smarty_Internal_Template->_subTemplateRender('%THEME%/default...', NULL, NULL, 0, 3600, Array, 2, false, NULL, NULL)
+#12 D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\f9e93e3bae574ffca7d77a01c2619c6df15dfdab_0.theme.news.tpl.php(31): Smarty_Internal_Runtime_Inheritance->endChild(Object(Smarty_Internal_Template), '%THEME%/default...')
+#13 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(123): content_68a326ef9ad506_16113370(Object(Smarty_Internal_Template))
+#14 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#15 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#16 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#17 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#18 D:\Projects\Hosts\life-basis.local\release\core\rs\application\block\manager.inc.php(91): Smarty_Internal_TemplateBase->fetch('theme:life-basi...')
+#19 D:\Projects\Hosts\life-basis.local\release\cache\smarty\compile\a9abc3ffdf2f41112dc9d6ee913dc13832044f75_0.rs.layout.tpl.php(38): RS\Application\Block\Manager->renderLayout()
+#20 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(123): content_68a321bd370cf1_06428473(Object(Smarty_Internal_Template))
+#21 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#22 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(217): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#23 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(238): Smarty_Internal_Template->render(false, 0)
+#24 D:\Projects\Hosts\life-basis.local\release\core\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(116): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#25 D:\Projects\Hosts\life-basis.local\release\core\rs\controller\front.inc.php(99): Smarty_Internal_TemplateBase->fetch('%THEME%/layout....')
+#26 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(433): RS\Controller\Front->exec()
+#27 D:\Projects\Hosts\life-basis.local\release\core\rs\router\manager.inc.php(456): RS\Router\Manager->applyRoute(Object(RS\Router\Route))
+#28 D:\Projects\Hosts\life-basis.local\release\index.php(24): RS\Router\Manager->dispatch()
+#29 {main}
+

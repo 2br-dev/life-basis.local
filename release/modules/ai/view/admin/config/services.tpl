@@ -1,0 +1,1 @@
+<a href="{adminUrl do=false mod_controller="ai-servicectrl"}" class="btn btn-default">{t}Перейти к настройке профилей{/t}</a>

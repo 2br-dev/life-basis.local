@@ -1,0 +1,33 @@
+.rs-comment-list .photo-container {
+    margin-top: 20px;
+    display: flex;
+}
+.rs-comment-list .photo-list {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.rs-comment-list .one-photo-container {
+    width: 150px;
+    margin-right: 10px;
+}
+.rs-comment-list .one-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 130px;
+}
+.rs-comment-list .one-photo img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.dropzone.rs-dropzone {
+    min-height: 100px;
+}
+.photo-container .swiper-button-next {
+    right: 1px;
+}
+.photo-container .swiper-button-prev {
+    left: 1px;
+}

@@ -1,0 +1,1 @@
+{include file=$field->getOriginalTemplate() field=$elem.__minutes_to_send_push_new_message}  {t}мин.{/t}

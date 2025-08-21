@@ -1,0 +1,44 @@
+version: '3'
+services:
+    php-apache:
+        build:
+            context: ./images/php
+        ports:
+            - 80:80
+        volumes:
+            - ./../:/var/www/html
+            - ./images/php/_local_settings.php:/var/www/html/_local_settings.php
+            - /var/www/html/docker
+            - ./images/php/sendmail:/usr/local/bin/sendmail
+            - ./images/php/php.ini:/usr/local/etc/php/conf.d/00-php.ini
+            - ./log/sendmail:/var/log/sendmail
+            - ./log/cron:/var/log/cron
+        links:
+            - 'mariadb'
+        extra_hosts:
+            - 'rs.local:127.0.0.1'
+            
+    mariadb:
+        image: mariadb:10.1
+        volumes:
+            - ./mariadb:/var/lib/mysql
+        environment:
+            TZ: "Europe/Moscow"
+            MYSQL_USER: "root"
+            MYSQL_ROOT_PASSWORD: "rootpwd"
+            MYSQL_DATABASE: "readyscript"
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: pma
+        links:
+            - mariadb
+        environment:
+            PMA_HOST: mariadb
+            PMA_PORT: 3306
+            PMA_ARBITRARY: 1
+            PMA_USER: "root"
+            PMA_PASSWORD: "rootpwd"
+        restart: always
+        ports:
+            - 8081:80

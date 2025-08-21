@@ -1,0 +1,1 @@
+<input type="text" name="{$name}" {$attributes} style="position:absolute; transform:translateX(-10000px);">

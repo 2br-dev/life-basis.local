@@ -1,0 +1,13 @@
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
+@import '../../node_modules/swiper/modules/navigation.scss';
+
+@import './frameworks/materialize';
+
+@import './parts/typography';
+@import './parts/vars';
+@import './parts/common';
+@import './parts/custom_grid';
+
+@import './parts/header';
+@import './parts/footer';

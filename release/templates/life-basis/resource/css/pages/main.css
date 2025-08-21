@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+section#hero h1 {
+    margin-top: 0;
+}
+
+section#hero .list-wrapper {
+    background-color: rgba(40, 89, 254, 0.1);
+    padding: clamp(12px, 3vw, 36px) !important;
+    border-radius: clamp(12px, 2vw, 16px);
+    margin-bottom: 1rem;
+}
+
+section#hero .main-parallax {
+    width: 100%;
+    aspect-ratio: 2.5/1;
+    background-size: cover;
+    border-radius: clamp(12px, 2vw, 16px);
+    min-height: 400px;
+}
+
+section#production .points-wrapper .row {
+    margin: 0;
+}
+
+section#production .img-pair {
+    align-items: center;
+    margin: 1em 0;
+}
+
+section#crystal {
+    background-color: #F4F5F5;
+    overflow: hidden;
+}
+
+section#crystal .water-selector {
+    margin: 0;
+    padding: 0;
+}
+
+section#crystal .water-selector li {
+    list-style: none;
+    margin: 1.4em 0 !important;
+    display: block;
+}
+
+section#crystal .water-selector li a {
+    color: #828B90;
+    font-size: clamp(19px, 2.5vw, 48px);
+}
+
+@media (max-width: 1200px) {
+    section#crystal .water-selector li a {
+        font-size: clamp(19px, 3.5vw, 48px);
+    }
+}
+
+section#crystal .water-selector li a.active {
+    color: #0B1F33;
+}
+
+section#crystal .water-selector li a.active:after {
+    content: "›";
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+section#crystal .crystal-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1.8;
+}
+
+@media (max-width: 600px) {
+    section#crystal .crystal-image-wrapper {
+        aspect-ratio: 1/1;
+    }
+}
+
+section#crystal .crystal-image-wrapper .crystal-slide {
+    position: absolute;
+    inset: 0;
+}
+
+section#crystal .crystal-text-wrapper {
+    position: relative;
+}
+
+section#crystal .crystal-text-wrapper .shadow {
+    color: transparent;
+    pointer-events: none;
+}
+
+section#crystal .crystal-text-wrapper .crystal-slide {
+    position: absolute;
+    inset: 0;
+}
+
+section#crystal .crystal-slide {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.4s, opacity 0.4s;
+    transform: translateY(2rem);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    section#crystal .crystal-slide img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: center;
+        object-position: center;
+    }
+}
+
+section#crystal .crystal-slide.active {
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+}
+
+section#crystal .details-content img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    -o-object-fit: contain;
+    object-fit: contain;
+}

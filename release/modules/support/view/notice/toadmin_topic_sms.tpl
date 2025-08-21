@@ -1,0 +1,1 @@
+{t number=$data->topic.number url=$url->getDomainStr()}В поддержку поступил новый тикет №%number (отправлено на сайте %url){/t}

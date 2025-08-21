@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">AI-ассистент</name>
+        <description multilanguage="true">Модуль предоставляет возможность взаимодействия с GPT-моделями искусственного интеллекта для автоматического наполнения контентом товаров, статей, пунктов меню</description>
+        <version>6.0.8</version>
+        <author>ReadyScript</author>
+        <is_system>1</is_system>
+        <max_tokens>1000</max_tokens>
+        <timeout_sec>30</timeout_sec>
+        <cron_step_timeout_sec>20</cron_step_timeout_sec>
+        <default_service>-1</default_service>
+        <default_chat_service>-1</default_chat_service>
+        <chat_enable>1</chat_enable>
+    </defaultValues>
+</config>

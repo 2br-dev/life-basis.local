@@ -1,0 +1,3 @@
+MAILTO=""
+## ReadyScript Cron
+* * * * *	cd /var/www/html/core/cron && /usr/local/bin/php -f /var/www/html/core/cron/cron.php > /var/log/cron/cron.log 2>&1

@@ -1,0 +1,101 @@
+footer{
+	background-color: #282D34;
+	padding: 2vmax 0;
+	color: #fff;
+
+	& .row{
+		margin-bottom: 0;
+
+		& img{
+			display: block;
+		}
+
+		& .nav-wrapper{
+			display: flex;
+			justify-content: space-between;
+			padding: 2rem 0;
+			border-top: 1px solid #fff;
+			gap: 20px;
+
+			@media(max-width: 850px){
+				flex-direction: column;
+			}
+
+			& .menu{
+				
+				& ul{
+					display: grid;
+					margin: 0;
+					grid-template-columns: repeat(4, 1fr);
+					column-gap: 60px;
+					row-gap: 20px;
+
+					@media(max-width: 600px){
+						grid-template-columns: repeat(2, 1fr);
+					}
+
+					@media(max-width: 400px){
+						grid-template-columns: 1fr;
+						row-gap: 6px;
+					}
+
+					& li{
+
+						display: block;
+
+						& a{
+							color: #fff;
+							
+							&:hover{
+								text-decoration: underline;
+								text-decoration-style: dotted;
+								text-decoration-thickness: 1px;
+								text-underline-offset: 4px;
+							}
+						}
+					}
+				}
+			}
+
+			& .social-media{
+
+				display: flex;
+				align-items: center;
+
+				& ul{
+					margin: 0;
+					display: flex;
+					gap: 1rem;
+				}
+
+				& img{
+					width: 2rem;
+				}
+			}
+
+		}
+	}
+
+	& .footer-logo{
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		width: fit-content;
+		margin-top: 2rem;
+
+		& img{
+			max-width: 100%;
+		}
+
+		& .fogged{
+			color: $fogged !important;
+		}
+
+		&.credits{
+			flex-direction: column;
+			gap: 0 !important;
+			color: #fff;
+			align-items: flex-end;
+		}
+	}
+}

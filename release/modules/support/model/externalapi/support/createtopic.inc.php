@@ -1,0 +1,131 @@
+<?php
+/**
+* ReadyScript (http://readyscript.ru)
+*
+* @copyright Copyright (c) ReadyScript lab. (http://readyscript.ru)
+* @license http://readyscript.ru/licenseAgreement/
+*/
+namespace Support\Model\ExternalApi\Support;
+
+use ExternalApi\Model\AbstractMethods\AbstractAuthorizedMethod;
+use ExternalApi\Model\Exception as ApiException;
+use ExternalApi\Model\Utils;
+use Support\Model\Api;
+use Support\Model\Orm\Support;
+use Support\Model\Orm\Topic;
+use Support\Model\Platform\PlatformMobileSiteApp;
+
+/**
+* Создает тему переписки
+*/
+class CreateTopic extends AbstractAuthorizedMethod
+{
+    const RIGHT_ADD = 1;
+
+    /**
+     * Возвращает комментарии к кодам прав доступа
+     *
+     * @return string[] - [
+     *     КОД => КОММЕНТАРИЙ,
+     *     КОД => КОММЕНТАРИЙ,
+     *     ...
+     * ]
+     */
+    public function getRightTitles()
+    {
+        return [
+            self::RIGHT_ADD => t('Создание переписки')
+        ];
+    }
+
+    public
+        /**
+         * @var Api
+         */
+        $api;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->api = new Api();
+    }
+
+
+    /**
+     * Возвращает объект
+     *
+     * @return array
+     */
+    public function getResult($support_item)
+    {
+        $topic =  new Topic($support_item['topic_id']);
+        return Utils::extractOrm($topic);
+    }
+
+    /**
+     * Создает тему переписки
+     *
+     * @param string $token Авторизационный token
+     * @param string $topic_title Тема обращения
+     * @param string $message Текст сообщения
+     * @param array $attachments Вложения (массив должен содержать публичные HASH данные)
+     *
+     * @example GET /api/methods/support.createTopic?token=b45d2bc3e7149959f3ed7e94c1bc56a2984e6a86&message=Помогите&topic_title=Помогите
+     *
+     * Ответ:
+     * <pre>
+     * {
+     *      "response": {
+     *          "success": true,
+     *          "topic": {
+     *              "id": "25",
+     *              "title": "Помогите",
+     *              "number": "752508",
+     *              "user_id": "1",
+     *              "manager_id": null,
+     *              "created": "2024-01-18 16:37:29",
+     *              "updated": "2024-01-18 16:37:29",
+     *              "msgcount": "1",
+     *              "newcount": "0",
+     *              "status": "open"
+     *           }
+     *      }
+     * }
+     * </pre>
+     *
+     * @return array Возвращает объект созданной переписки
+     */
+    protected function process($token, $topic_title = '', $message = '', $attachments = [])
+    {
+        if ($user = $this->token->getUser()) {
+            $support_item = $this->api->getNewElement();
+            $support_item->escapeAll(true);
+
+            $save_data = [
+                'user_id' => $user['id'],
+                'is_admin' => 0,
+                'topic' => $topic_title,
+                'message' => $message,
+                'message_type' => Support::TYPE_USER_MESSAGE,
+                'topic_platform' => PlatformMobileSiteApp::PLATFORM_ID
+            ];
+
+            if ($attachments) {
+                $save_data['attachments'] = $attachments;
+            }
+
+            if ($support_item->save(null, $save_data, [])) {
+                return [
+                    'response' => [
+                        'success' => true,
+                        'topic' => $this->getResult($support_item)
+                    ]
+                ];
+            }else {
+                throw new ApiException(t($support_item->getErrorsStr()), ApiException::ERROR_WRITE_ERROR);
+            }
+        }else {
+            throw new ApiException(t('Пользователь с таким ID не найден'), ApiException::ERROR_OBJECT_NOT_FOUND);
+        }
+    }
+}

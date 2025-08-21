@@ -1,0 +1,28 @@
+@import '../parts/vars';
+
+section#contacts{
+
+	& #map{
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		background-color: #efefef;
+		border-radius: 16px;
+		overflow: hidden;
+		min-height: calc(100% - 1.2rem);
+	}
+
+	& .qr-wrapper{
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		background-color: rgba($accent, .1);
+		padding: clamp(6px, 2vw, 20px);
+		border-radius: 16px;
+
+		& .img-wrapper{
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 8px;
+		}
+	}
+}

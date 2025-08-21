@@ -1,0 +1,37 @@
+body {
+    position: relative;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 65%;
+    max-width: 1200px;
+    min-width: 290px;
+    aspect-ratio: 5/3;
+    right: 0;
+    top: 200px;
+    background-image: url("../../img/logo-img.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+}
+
+@media (max-width: 850px) {
+    body:before {
+        top: 35vmax;
+    }
+}
+
+section#details {
+    position: relative;
+}
+
+section#details .detail {
+    margin: 1em 0;
+}
+
+section#details .detail .title {
+    color: #828B90;
+}

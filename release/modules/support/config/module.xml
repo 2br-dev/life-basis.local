@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Поддержка. Личные сообщения</name>
+        <description multilanguage="true">Переписка администратора и пользователя в личном кабинете</description>
+        <version>6.0.30</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        <allow_attachments>1</allow_attachments>
+        <allow_extensions>tiff,pdf,jpg,png,gif,zip,doc,docx,txt</allow_extensions>
+        <attachment_max_filesize>50</attachment_max_filesize>
+        <number_mask_digits>6</number_mask_digits>
+        <one_fetch_limit>30</one_fetch_limit>
+        <platforms_on_site>all</platforms_on_site>
+        <enable_autoupdate_tickets>1</enable_autoupdate_tickets>
+        <enable_new_message_sound>1</enable_new_message_sound>
+    </defaultValues>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Платформа Telegram</name>
+        <description multilanguage="true">Предоставляет базовые возможности для обработки запросов от Telegram-ботов</description>
+        <version>6.0.14</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        <verify_providers type="array">
+            <value>email</value>
+        </verify_providers>
+    </defaultValues>
+</config>

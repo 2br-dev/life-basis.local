@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Блок файлов</name>
+        <description multilanguage="true">Позволяет прикреплять файлы к различным объектам в системе</description>
+        <version>6.0.18</version>
+        <is_system>1</is_system>
+        <author>ReadyScript</author>
+        <expired_files_days>1</expired_files_days>
+    </defaultValues>
+</config>

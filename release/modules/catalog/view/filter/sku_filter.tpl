@@ -1,0 +1,1 @@
+<input type="text" name="{$fitem->getName()}" value="{$fitem->getValue()}" data-app-scan="{$fitem->getOption('scanFormats')}">

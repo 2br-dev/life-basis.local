@@ -1,0 +1,3 @@
+User-agent: *
+Host: life-basis.local
+Sitemap: http://life-basis.local/?site_id=1

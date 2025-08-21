@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<structure grid_system="none">
+  <page route_id="default" context="theme" template="" inherit="1"/>
+  <page route_id="main.index" context="theme" template="theme:life-basis/main.tpl" inherit="1"/>
+  <page route_id="menu.item_3" context="theme" template="theme:life-basis/catalog.tpl" inherit="1"/>
+  <page route_id="menu.item_4" context="theme" template="theme:life-basis/about.tpl" inherit="1"/>
+  <page route_id="menu.item_5" context="theme" template="theme:life-basis/logistics.tpl" inherit="1"/>
+  <page route_id="menu.item_6" context="theme" template="theme:life-basis/stm.tpl" inherit="1"/>
+  <page route_id="menu.item_8" context="theme" template="theme:life-basis/details.tpl" inherit="1"/>
+  <page route_id="menu.item_9" context="theme" template="theme:life-basis/contacts.tpl" inherit="1"/>
+  <hooks>
+    <hook name="catalog-product:images"><![CDATA[testbuy]]></hook>
+    <hook name="catalog-product:images"><![CDATA[test]]></hook>
+    <hook name="catalog-product:rating"><![CDATA[custom]]></hook>
+    <hook name="catalog-product:rating"><![CDATA[demo]]></hook>
+  </hooks>
+  <templateModules/>
+</structure>

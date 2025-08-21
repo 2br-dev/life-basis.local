@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme scriptType="shop" scriptMajorVersion="6" themeType="pc">
+    <general>
+        <author>2BR</author>
+        <name>Основа жизни</name>
+        <description>Адаптивная тема, разработая специально для Основа жизни</description>
+        <version>6.0.26</version>
+    </general>
+</theme>

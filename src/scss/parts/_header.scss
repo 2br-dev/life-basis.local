@@ -1,0 +1,178 @@
+header{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	background-color: rgba(#fff, .75);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+
+	& .row{
+		margin: 0;
+		height: 84px;
+		padding: clamp(5px, 2vw, 20px) 0;
+
+		@media(max-width: 400px){
+			height: 64px;
+		}
+	}
+	
+	& .topnav{
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		transition: border-color .2s;
+		gap: 5px;
+		
+		& .logo-wrapper{
+			flex-grow: 1;
+			background-color: rgba(black, .05);
+			border-radius: 6px;
+		}
+
+		& .logo{
+			display: flex;
+			height: 100%;
+			align-items: center;
+			gap: 10px;
+			padding: 6px;
+			width: fit-content;
+
+			& img{
+				display: block;
+				height: 42px;
+			}
+
+			& svg{
+
+				display: block;
+				width: 75px;
+				height: 30px;
+
+				& g{
+					width: 100px;
+				}
+			}
+
+			& #logo-text{
+				fill: $text;
+			}
+		}
+		
+		& .menu-wrapper{
+			display: flex;
+			align-items: center;
+
+			& nav{
+				@media(max-width: 1000px){
+					display: none;
+				}
+			}
+		}
+
+		& ul{
+			margin: 0;
+			display: flex;
+			gap: 5px;
+
+			& a{
+				color: $text;
+				display: flex;
+				align-items: center;
+				line-height: 3em;
+				padding: 0 clamp(.75em, .7vw, 1.25em);
+				transition: background-color .2s;
+				background-color: rgba(black, .05);
+
+				border-radius: 6px;
+
+				@supports(corner-shape: squircle){
+					border-radius: 16px;
+					corner-shape: squircle;
+				}
+
+
+				&:hover{
+					background-color: rgba(black, .1);
+				}
+
+				& svg{
+					display: block;
+				}
+			}
+		}
+
+		& .burger-wrapper{
+			margin: 0;
+			min-height: 100%;
+
+			@media(min-width: 1000px){
+				display: none;
+			}
+
+			& a{
+				min-height: 100%;
+			}
+
+			& span{
+				width: 0;
+			}
+
+			& #burger{
+				fill: $text;
+			}
+		}
+	}
+
+	&.hero{
+		margin-top: clamp(0px, 2vw, 4vmax);
+		overflow: hidden;
+		background-color: transparent;
+		transition: background-color .2s;
+
+		& .row{
+			border-bottom: 1px solid #fff;
+		}
+
+		& .logo #logo-text{
+			fill: #fff;
+		}
+
+		& .topnav .menu-wrapper nav ul a{
+			color: #fff;
+			transition: color .2s;
+		}
+
+		& .topnav .burger-wrapper #burger{
+			fill: #fff;
+		}
+
+		& ~ main{
+			margin-top: calc(-4vmax - 84px);
+			
+			@media(max-width: 600px){
+				margin-top: calc(-4vmax - 64px);
+			}
+		}
+
+		&.w{
+			background-color: rgba(#fff, .75);
+
+			& .topnav .menu-wrapper nav ul a{
+				color: $text;
+			}
+
+			& .row{
+				border-bottom: 1px solid transparent;
+			}
+
+			& .logo #logo-text{
+				fill: $text;
+			}
+
+			& .topnav .burger-wrapper #burger{
+				fill: $text;
+			}
+		}
+	}
+}

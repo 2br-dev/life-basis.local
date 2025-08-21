@@ -1,0 +1,25 @@
+section#logistics{
+
+	& .wide{
+		border-radius: clamp(8px, 2vw, 16px);
+		object-fit: cover;
+		min-height: 220px;
+	}
+
+	& .logistics-parallax{
+		width: 100%;
+		aspect-ratio: 2.5 / 1;
+		border-radius: clamp(12px, 2vw, 16px);
+		background-size: cover;
+		min-height: 300px;
+		background-position: center 81%;
+	}
+
+	& .img-pair{
+		align-items: center;
+
+		@media(max-width: 550px){
+			align-items: flex-start;
+		}
+	}
+}

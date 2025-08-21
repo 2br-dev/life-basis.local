@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Управление meta-тегами</name>
+        <description multilanguage="true">Позволяет устанавливать заголовки страниц, описания, ключевые слова</description>
+        <version>6.0.3</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        <make_default_description_from_title>1</make_default_description_from_title>
+    </defaultValues>
+</config>

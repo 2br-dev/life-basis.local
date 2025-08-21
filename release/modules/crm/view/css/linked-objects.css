@@ -1,0 +1,18 @@
+.admin-style .linked-objects .linked-object .linked-object__status-title {
+    line-height: 24px;
+}
+.admin-style .linked-objects .linked-object .status {
+    border-radius: 20px;
+    padding: 4px 6px;
+    font-size: 11px;
+}
+.admin-style .linked-objects .linked-object .linked-object__status-title {
+    line-height: 24px;
+}
+.admin-style .linked-objects .linked-object .linked-object__num-description,
+.admin-style .linked-objects .linked-object__files a {
+    color: #2c2c2c;
+}
+.admin-style .linked-objects .linked-object__files a:hover {
+    color: #183151;
+}
