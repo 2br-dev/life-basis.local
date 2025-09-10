@@ -122,3 +122,57 @@ URL:/text-news/
 #28 D:\Projects\Hosts\life-basis.local\release\index.php(24): RS\Router\Manager->dispatch()
 #29 {main}
 
+[2025.09.09 09:54:32] Исключение - "Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"
+IP:127.0.0.1
+URL:/
+Код ошибки:2002
+Тип ошибки:mysqli_sql_exception
+Файл:D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php
+Строка:50
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(50): mysqli_connect('127.0.0.1', 'life-basis-db', 'life-basis#2025', 'life-basis', 3306, NULL)
+#1 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(32): RS\Db\Adapter::connect()
+#2 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(239): RS\Db\Adapter::init()
+#3 D:\Projects\Hosts\life-basis.local\release\core\system\autoload.inc.php(42): include('D:\\Projects\\Hos...')
+#4 D:\Projects\Hosts\life-basis.local\release\core\rs\orm\request.inc.php(291): Autoload->autoload('rs/db/adapter')
+#5 D:\Projects\Hosts\life-basis.local\release\core\rs\orm\request.inc.php(423): RS\Orm\Request->exec()
+#6 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(130): RS\Orm\Request->objects('Site\\Model\\Orm\\...', 'id')
+#7 [internal function]: RS\Site\Manager::getSiteList(false)
+#8 D:\Projects\Hosts\life-basis.local\release\core\rs\cache\manager.inc.php(100): call_user_func_array(Array, Array)
+#9 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(122): RS\Cache\Manager->request(Array, false)
+#10 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(82): RS\Site\Manager::getSiteList()
+#11 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(63): RS\Site\Manager::getSiteByUrl('life-basis.loca...', '/')
+#12 D:\Projects\Hosts\life-basis.local\release\core\rs\language\core.inc.php(230): RS\Site\Manager::getSite()
+#13 D:\Projects\Hosts\life-basis.local\release\core\rs\language\core.inc.php(55): RS\Language\Core::getCurrentLang()
+#14 D:\Projects\Hosts\life-basis.local\release\core\rs\config\abstractsetup.inc.php(260): RS\Language\Core::init()
+#15 D:\Projects\Hosts\life-basis.local\release\setup.inc.php(18): RS\Config\AbstractSetup::init()
+#16 D:\Projects\Hosts\life-basis.local\release\setup.inc.php(22): Setup::init()
+#17 D:\Projects\Hosts\life-basis.local\release\index.php(5): require('D:\\Projects\\Hos...')
+#18 {main}
+
+[2025.09.09 09:54:35] Исключение - "Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"
+IP:127.0.0.1
+URL:/favicon.ico
+Код ошибки:2002
+Тип ошибки:mysqli_sql_exception
+Файл:D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php
+Строка:50
+Стек вызова:#0 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(50): mysqli_connect('127.0.0.1', 'life-basis-db', 'life-basis#2025', 'life-basis', 3306, NULL)
+#1 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(32): RS\Db\Adapter::connect()
+#2 D:\Projects\Hosts\life-basis.local\release\core\rs\db\adapter.inc.php(239): RS\Db\Adapter::init()
+#3 D:\Projects\Hosts\life-basis.local\release\core\system\autoload.inc.php(42): include('D:\\Projects\\Hos...')
+#4 D:\Projects\Hosts\life-basis.local\release\core\rs\orm\request.inc.php(291): Autoload->autoload('rs/db/adapter')
+#5 D:\Projects\Hosts\life-basis.local\release\core\rs\orm\request.inc.php(423): RS\Orm\Request->exec()
+#6 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(130): RS\Orm\Request->objects('Site\\Model\\Orm\\...', 'id')
+#7 [internal function]: RS\Site\Manager::getSiteList(false)
+#8 D:\Projects\Hosts\life-basis.local\release\core\rs\cache\manager.inc.php(100): call_user_func_array(Array, Array)
+#9 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(122): RS\Cache\Manager->request(Array, false)
+#10 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(82): RS\Site\Manager::getSiteList()
+#11 D:\Projects\Hosts\life-basis.local\release\core\rs\site\manager.inc.php(63): RS\Site\Manager::getSiteByUrl('life-basis.loca...', '/favicon.ico')
+#12 D:\Projects\Hosts\life-basis.local\release\core\rs\language\core.inc.php(230): RS\Site\Manager::getSite()
+#13 D:\Projects\Hosts\life-basis.local\release\core\rs\language\core.inc.php(55): RS\Language\Core::getCurrentLang()
+#14 D:\Projects\Hosts\life-basis.local\release\core\rs\config\abstractsetup.inc.php(260): RS\Language\Core::init()
+#15 D:\Projects\Hosts\life-basis.local\release\setup.inc.php(18): RS\Config\AbstractSetup::init()
+#16 D:\Projects\Hosts\life-basis.local\release\setup.inc.php(22): Setup::init()
+#17 D:\Projects\Hosts\life-basis.local\release\index.php(5): require('D:\\Projects\\Hos...')
+#18 {main}
+

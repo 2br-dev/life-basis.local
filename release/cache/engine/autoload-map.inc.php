@@ -905,4 +905,5 @@
   'crm/model/interactionapi' => 'D:/Projects/Hosts/life-basis.local/release/modules/crm/model/interactionapi.inc.php',
   'crm/model/orm/interaction' => 'D:/Projects/Hosts/life-basis.local/release/modules/crm/model/orm/interaction.inc.php',
   'crm/model/orm/link' => 'D:/Projects/Hosts/life-basis.local/release/modules/crm/model/orm/link.inc.php',
+  'rs/db/exception' => 'D:/Projects/Hosts/life-basis.local/release/core/rs/db/exception.inc.php',
 );
